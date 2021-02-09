@@ -14,8 +14,12 @@
         <li class="nav-item">
           <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ "/posts" | relative_url }}">Posts</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Posts</a>
+          <div class="dropdown-menu">
+            <a class="nav-link" href="{{ "/posts" | relative_url }}">Study</a>
+            <a class="nav-link" href="{{ "/posts" | relative_url }}">Review</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{"/contact" | relative_url }}">Contact</a>
