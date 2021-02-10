@@ -1,13 +1,7 @@
----
-layout: page
-title: Posts
-background: '/img/bg-post.jpg'
----
-
-{% for post in paginator.posts %}
-
+{% assign category = page.category | default: page.title %}
+{% for post in site.categories[category] %}
 <article class="post-preview">
-  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+  <a href="{{ post.url | prepend: site.category | replace: '//', '/' }}">
     <h2 class="post-title">{{ post.title }}</h2>
     {% if post.subtitle %}
     <h3 class="post-subtitle">{{ post.subtitle }}</h3>
@@ -26,7 +20,6 @@ background: '/img/bg-post.jpg'
 </article>
 
 <hr>
-
 {% endfor %}
 
 <!-- Pager -->

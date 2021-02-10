@@ -17,8 +17,14 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Posts</a>
           <div class="dropdown-menu">
-            <a class="nav-link" href="{{ "/posts" | relative_url }}">Study</a>
-            <a class="nav-link" href="{{ "/posts" | relative_url }}">Review</a>
+            {% assign pages_list = site.pages %}
+            {% for node in pages_list %}
+              {% if node.title != null %}
+                {% if node.layout == "category" %}
+                  <a class="nav-link" href="{{node.url}}">{{ node.title }}</a>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
           </div>
         </li>
         <li class="nav-item">
