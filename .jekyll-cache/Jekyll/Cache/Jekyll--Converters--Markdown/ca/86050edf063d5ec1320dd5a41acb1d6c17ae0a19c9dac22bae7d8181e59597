@@ -1,0 +1,40 @@
+I"�<p>안녕하세요.</p>
+
+<p>이제 막 github 블로그를 만든 chaelin입니다. 만들었던 과정을 시작으로 배우게 된 것들을 차근 차근 적어보려 합니다.</p>
+
+<p>우선 시작 테스트 과정입니다!</p>
+
+<h2 class="section-heading">테스트 하기 (시작)</h2>
+
+<h5>1. repository 만들기</h5>
+<p>우선 git 계정이 필요합니다! git 계정이 없으시면 먼저 <a href="https://github.com">계정 생성</a>을 해주세요!</p>
+
+<p>git 계정이 준비 되었다면 repository를 생성해보겠습니다.</p>
+
+<p>repository 이름 형식은 다음처럼 해야합니다!</p>
+
+<p class="hight-block">깃아이디.github.io</p>
+
+<p><img class="img-fluid" src="/img/posts/inPost/jekyll-01-01.png" />
+<span class="caption text-muted">저는 이미 생성해서 생성 불가로 알림이 뜨네요.</span></p>
+
+<h5>2. index.html 만들기</h5>
+
+<p>위처럼 생성한 후에 index.html 파일을 생성해줍니다.</p>
+
+<p>root에 있는 index.html 파일은 들어갔을 때 가장 처음에 나오는 페이지가 됩니다. 즉 ‘깃아이디.github.io’로 들어가면 나오는 첫 페이지에요!</p>
+
+<p>간단하게 index.html 페이지를 만들어 테스트 해볼게요!</p>
+
+<p>처음 생성할 때 readme.md를 생성하지 않으면 다음 버튼으로 새로운 파일을 생성할 수 있어요! 저는 처음에 몰라서 해맸어요ㅎㅎ</p>
+
+<p><img class="img-fluid" src="/img/posts/inPost/jekyll-01-02.png" />
+<span class="caption text-muted">빨간 상자 속에 글을 클릭하면 돼요!</span></p>
+
+<p>처음에 read.md를 만들어서 프로젝트에 대한 설명을 적어두는 것을 추천드려요! 쨌든 저 버튼으로 index.html 파일을 만들어주세요~</p>
+
+<p>repository 생성할 때 Add a README file 버튼을 클릭하면 됩니다.</p>
+
+<p><img class="img-fluid" src="/img/posts/inPost/jekyll-01-03.png" />
+<span class="caption text-muted">빨간 상자 속에 글을 클릭하면 돼요!</span></p>
+:ET
