@@ -32,7 +32,7 @@
           $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
           $.ajax({
             url: "https://formspree.io/f/xvovynyn",
-            type: "POST",
+            method: "POST",
             data: {
               name: name,
               phone: phone,
