@@ -1,6 +1,6 @@
 // Styling for the post page
 .post-preview {
-  > a {
+ > a {
     color: $gray-900;
     &:focus,
     &:hover {
@@ -11,6 +11,15 @@
       font-size: 30px;
       margin-top: 30px;
       margin-bottom: 10px;
+      > a {
+        text-decoration: none;
+        color: $gray-900;
+        &:focus,
+        &:hover {
+          text-decoration: underline;
+          color: $primary;
+        }
+      }
     }
     > .post-subtitle {
       font-weight: 300;
@@ -35,8 +44,14 @@
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
-        font-size: 36px;
+        font-size: 32px;
       }
     }
   }
+}
+
+.post-category{
+  background-color: lightgray;
+  padding:0 5px 0 5px;
+  margin: 0;
 }
