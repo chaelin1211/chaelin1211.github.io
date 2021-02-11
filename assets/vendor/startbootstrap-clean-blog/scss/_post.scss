@@ -50,14 +50,14 @@
   }
 }
 
+.post-category{
+  background-color: lightgray;
+  padding:0 5px 0 5px;
+  margin: 0;
+}
 
 .post{
   font-family: 'Nanum Myeongjo', serif;
-  .post-category{
-    background-color: lightgray;
-    padding:0 5px 0 5px;
-    margin: 0;
-  }
 
   .hight-block{
     background-color: $gray-200;
