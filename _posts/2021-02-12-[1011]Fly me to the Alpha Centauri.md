@@ -3,7 +3,7 @@ layout: post
 title: "[1011] Fly me to the Alpha Centauri"
 subtitle: "우현이는 어린 시절, 지구 외의 다른 행성에서도 인류들이 살아갈 수 있는 미래가 오리라 믿었다."
 date: 2021-02-12 00:56:00 +0900
-background: '/img/posts/algorithm-01.png'
+background: '/img/posts/algorithm-01.jpg'
 category: Study
 ---
 ### 문제
@@ -25,30 +25,30 @@ category: Study
 
 ``` java
 
-        while (i < y) {             //i: 현재 위치
-            k = termList.peek();    // 이전 이동 범위
-            term[0] = k + 1;        // 가능한 이동 범위 세가지 모두 추출
-            term[1] = k;
-            term[2] = k - 1;
+while (i < y) {             // i: 현재 위치
+    k = termList.peek();    // 이전 이동 범위
+    term[0] = k + 1;        // 가능한 이동 범위 세가지 모두 추출
+    term[1] = k;
+    term[2] = k - 1;
 
-            k = -1;
-            for (int tmp : term) {  // 이동 범위 중 가능한 범위 추출 (큰 순으로)
-                if (i + tmp < y || (i+tmp == y && tmp ==1)) {
-                                    // y를 벗어나지 않거나 y 직전일 때 이동 거리가 1인 경우 
-                    k = tmp;
-                    break;
-                }
-            }
-            if (k <= 0) {           // 가능한 이동 범위가 없음
-                termList.add(termList.pop() - 1);
-            }else if(i+k == y && k != 1){   // 마지막 이동이 1이 아닌 경우
-                termList.add(termList.pop() - 1);
-            }else{                  // 가능한 이동 범위인 경우 stack에 저장
-                i+=k;             
-                location.add(i);
-                termList.add(k);   
-            }
+    k = -1;
+    for (int tmp : term) {  // 이동 범위 중 가능한 범위 추출 (큰 순으로)
+        if (i + tmp < y || (i+tmp == y && tmp ==1)) {
+                            // y를 벗어나지 않거나 y 직전일 때 이동 거리가 1인 경우 
+            k = tmp;
+            break;
         }
+    }
+    if (k <= 0) {           // 가능한 이동 범위가 없음
+        termList.add(termList.pop() - 1);
+    }else if(i+k == y && k != 1){   // 마지막 이동이 1이 아닌 경우
+        termList.add(termList.pop() - 1);
+    }else{                  // 가능한 이동 범위인 경우 stack에 저장
+        i+=k;             
+        location.add(i);
+        termList.add(k);   
+    }
+}
 
 ```
 
@@ -57,3 +57,5 @@ category: Study
 끝으로는 이 stack의 size를 return하며 종료합니다.
 
 > 근데 이 방법으로는 **시간초과**가 발생하네요.... 다시 풀어보고 추가하겠습니다!
+
+<p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>
