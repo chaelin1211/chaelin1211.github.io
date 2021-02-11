@@ -40,5 +40,6 @@ GS24에서 털어온 디저트들 후기를 남기며 첫 글을 작성합니다
 
 실온에 두지말고 꼭 냉장 후에! 크림이 차가워야 맛있어요~ 이건 크기가 좀 있어서 두번 나눠먹었어요~
 
+<p class="hight-block">근처에 카페가 없을 때 디저트로 추천합니다~<br/>강추에요!</p>
 
-Text by Chaelin. Photographs by Chaelin.
+<p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>

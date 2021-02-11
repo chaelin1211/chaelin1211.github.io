@@ -54,3 +54,5 @@ repository 생성할 때 Add a README file 버튼을 클릭하면 됩니다.
 
 도움이 됐으면 좋겠습니다. 감사합니다:)
 
+
+<p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>
