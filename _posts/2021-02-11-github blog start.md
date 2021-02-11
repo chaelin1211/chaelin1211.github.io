@@ -16,7 +16,14 @@ category: Study
 우선 시작 테스트 과정입니다!
 
 <h3>1. repository 만들기</h3>
-우선 git 계정이 필요합니다! git 계정이 없으시면 먼저 <a href="https://github.com">계정 생성</a>을 해주세요!   
+우선 git 계정이 필요합니다! git 계정이 없으시면 먼저 <a href="https://github.com">계정 생성</a>을 해주세요!
+
+<blockquote class="blockquote"> Git이란 컴퓨터 파일의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한 분산 버전 관리 시스템이다. 소프트웨어 개발에서 소스 코드 관리에 주로 사용되지만 어떠한 집합의 파일의 변경사항을 지속적으로 추적하기 위해 사용될 수 있다.
+
+
+<p class = "placeholder">위키트리 참조</p>
+</blockquote>
+
 git 계정이 준비 되었다면 repository를 생성해보겠습니다.
 
 repository 이름 형식은 다음처럼 해야합니다!
