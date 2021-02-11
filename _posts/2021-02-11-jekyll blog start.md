@@ -2,6 +2,7 @@
 layout: post
 title: "1. Github 블로그 만들기"
 subtitle: "생성하고 테스트하는 과정"
+date: 2021-02-11 04:33:00 +0900
 background: '/img/posts/jekyll-01.png'
 category: Study
 ---

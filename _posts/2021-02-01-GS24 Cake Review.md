@@ -2,7 +2,7 @@
 layout: post
 title: "GS24 디저트 털이!"
 subtitle: "딸기 파르페 케이크 & 레몬 파운드 케이크"
-date: 2021-02-01 02:01:03 -0400
+date: 2021-02-01 02:01:03 +0900
 background: '/img/posts/inPost/KakaoTalk_20210211_021427030.jpg'
 category: Review
 ---
