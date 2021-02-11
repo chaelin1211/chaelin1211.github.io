@@ -1,0 +1,141 @@
+I"�<p>안녕하세요~</p>
+
+<p>스스로 테마를 만들어도 되지만! 블로그 기능이 구현되어 있는 theme를 다운 받아 적용해서 수정하는 것이 효율적이겠죠~</p>
+
+<hr />
+
+<ol>
+  <li>테마 다운로드</li>
+  <li>사용자 설정</li>
+  <li>적용 확인</li>
+</ol>
+
+<hr />
+
+<h5 id="1-테마-다운로드">1. 테마 다운로드</h5>
+<p>테마는 유료, 무료 다양하구요! 전 깔끔한 clean 테마를 다운 받았습니다. 다음 링크에서 무료 테마들을 볼 수 있습니다. 
+<a class="hight-block" href="https://jekyllthemes.io/free">https://jekyllthemes.io/free</a></p>
+
+<p><img class="img-fluid" src="/img/posts/inPost/jekyll-03-01.png" />
+<span class="caption text-muted">원하는 테마를 선택해서 깃으로 이동하세요!</span></p>
+
+<p><img class="img-fluid" src="/img/posts/inPost/jekyll-03-02.png" />
+<span class="caption text-muted">제가 다운한 테마에요!</span></p>
+
+<hr />
+
+<ul>
+  <li>fork - repository를 미리 생성하지 않은 경우!</li>
+  <li>미리 생성한 repositoy에 clone</li>
+  <li>zip파일로 받아서 git 폴더에 압축 해제</li>
+</ul>
+
+<hr />
+
+<p>저는 zip파일로 받아서 git에 압축 해제하여 적용하였어요.</p>
+
+<p><img class="img-fluid" src="/img/posts/inPost/jekyll-03-03.png" />
+<span class="caption text-muted">빨간 버튼을 클릭해 테마가 저장된 github로 이동합니다!</span></p>
+
+<p>zip파일로 다운받을 수도 있고 clone할 수도 있어요.</p>
+
+<p><img class="img-fluid" src="/img/posts/inPost/jekyll-03-04.png" />
+<span class="caption text-muted">zip파일 다운 클릭!</span></p>
+
+<p>로컬에 있는 git 폴더에 압축 풀어주세요!</p>
+
+<p>전에 미리 만들었던 index.html이랑 겹칠 수도 있는데 덮어씌워주세요! 따로 유지하고 싶으시면 다른데에 옮겨두세요.</p>
+
+<p>압축폴더의 내용이 이렇게 저장됩니다.</p>
+
+<p><img class="img-fluid" src="/img/posts/inPost/jekyll-03-05.png" />
+<span class="caption text-muted">저는 커스터마이징한게 있어서 처음 다운 data랑은 다른 부분도 있어요</span></p>
+
+<h5 id="2-사용자-설정">2. 사용자 설정</h5>
+<p>기존 내용에서 삭제할 수 있는 부분은 삭제하고 필요한 부분을 변경할게요.</p>
+
+<p>삭제해도 되는 파일은 다음과 같습니다.</p>
+<p class="hight-block">README.md<br />jekyll-theme-clean-blog.gemspec<br />스크린샷(.png 파일)</p>
+
+<p>수정할 부분은 _config.yml 파일의 내용입니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title:              Clean Blog
+email:              your-email@example.com
+description:        A Blog Theme by Start Bootstrap
+author:             Start Bootstrap
+baseurl:            "/startbootstrap-clean-blog-jekyll"
+url:                "https://startbootstrap.github.io"
+</code></pre></div></div>
+
+<p>초기 내용에서 title, email과 description은 원하는 내용으로 바꿔주시면 돼요.</p>
+
+<p>(필수) baseurl은 없애주시고 url의 “startbootstrap”은 본인 github 아이디로 바꿔주세요.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Social Profiles
+twitter_username:   SBootstrap
+github_username:    StartBootstrap
+facebook_username:  StartBootstrap
+instagram_username:  
+linkedin_username:
+</code></pre></div></div>
+
+<p>이 부분도 본인 계정으로 바꿔주시면 되고 없으면 비워두시면 됩니다!</p>
+
+<p>채워주시면 하단에 링크 아이콘이 생겨요. 
+<img class="img-fluid" src="/img/posts/inPost/jekyll-03-06.png" />
+<span class="caption text-muted">아이콘이 귀엽네요.</span></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap 
+</code></pre></div></div>
+
+<ul>
+  <li>paginate는 한 페이지에서 나올 게시물 개수</li>
+  <li>paginate_path는 paginate를 이용해 게시물 목록을 보여줄 페이지 path입니다.</li>
+</ul>
+
+<p>테마 내에서 posts/index.html에서 게시물 목록이 보여지기 때문에 거기로 맞춰져 있습니다.   나중에 필요하면 변경해서 이용하시면 됩니다.</p>
+
+<p>여기까지 하면 필수적인 부분은 다 교체했습니다. 추가적으로 필요한 커스터마이징은 html 파일 내에 내용을 바꾸시면 되는데 아주 쉬워요!</p>
+
+<p>이 부분은 다음 글로 적을게요. 너무 길어질거 같아서…</p>
+
+<h6 id="추가적인-내용">추가적인 내용</h6>
+
+<hr />
+
+<ul>
+  <li>_posts 폴더: 게시글 저장 폴더</li>
+  <li>assests: JavaScipt, CSS, jquery등을 저장한 폴더</li>
+  <li>_layout, _includes는 html 파일을 저장한 폴더인데 includes에 저장된 것들은 scrip나 공통요소입니다.</li>
+  <li>root의 index.html은 홈 화면입니다.</li>
+</ul>
+
+<hr />
+
+<h5 id="3-적용-확인">3. 적용 확인</h5>
+<p>jekyll server를 켜서 확인해 보시면 됩니다~</p>
+
+<p>혹시 위의 동작에서 baseurl 삭제를 빼먹으셨다면 오류가 날 수 있어요!</p>
+
+<p>위 내용대로 했는데 오류가 난다면 prompt 창에서 파일 경로가 git 폴더가 맞는지 한 번 확인해주세요. 그래도 안된다면 <code class="language-plaintext highlighter-rouge">bundle install</code> 명령어 입력 후 다시 server 켜보세요!</p>
+
+<p>bundle install은 새로운 bundle 추가할 때 사용하는데 삭제하거나 변경이 있으면 다시 해줘야 합니다.</p>
+
+<h5>4. 후기</h5>
+<p>저는 이 부분에서 하루 꼬박 걸렸어요… 왠지 모르게 오류가 계속 나서…</p>
+
+<p>baseurl 꼭 지우기!! 잊지마세요…</p>
+
+<p>jekyll server가 안 된다면 꼭 두 번 째 글에서 jekyll install 코드 다시 해보는 것도 잊지마세요!</p>
+
+<p>감사합니다:)</p>
+
+<p class="placeholder">Text by Chaelin. Photographs by Chaelin.</p>
+:ET
