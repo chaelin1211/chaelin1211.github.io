@@ -23,7 +23,11 @@ layout: default
             </span>
             <div class="post-tag">
               {% for tag in page.tags %}
-              <span>{{ site.data.format[tag] }}</span>
+                {% if site.data.tags contains tag %}
+                  <a href="/posts/?tag={{ tag }}">
+                    {{ site.data.format[tag] }}
+                  </a>
+                {% endif %}
               {% endfor %}
             </div>
           </div>

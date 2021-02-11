@@ -7,7 +7,9 @@
 
 
 {% for tag in tags %}
+  {% if site.data.tags contains tag %}
   <span class="tag" data-tag="{{tag}}">{{ site.data.format[tag] }}</span>
+  {% endif %}
 {% endfor %}
 
 <span class="tag selected px-3" data-tag="">ALL</span>

@@ -21,6 +21,28 @@
     $('.tag').removeClass('selected');
     $('.tag[data-tag='+tagName+']').addClass('selected');
   }
+
+  $(document).ready(function() {
+    let currentTag = "";
+    const queryTag = getParam('tag');
+    if (queryTag) {
+      currentTag = queryTag;
+      filterByTagName(currentTag);
+    }
+  });
+
+  function getParam(sname) {
+    // 출처: https://electronic-moongchi.tistory.com/82
+    var params = location.search.substr(location.search.indexOf("?") + 1);
+    var sval = "";
+    params = params.split("&");
+    for (var i = 0; i < params.length; i++) {
+        temp = params[i].split("=");
+        if ([temp[0]] == sname) { sval = temp[1]; }
+    }
+    return sval;
+  }
+
 </script>
 {% if page.url contains 'contact' %}
   <!-- Form Validation -->
