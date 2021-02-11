@@ -64,6 +64,7 @@
     text-align: center;
     padding: 10px 0 10px 0;
     margin: 10px 50px 10px 50px;
+    display: block;
   }
 
   .placeholder{
@@ -80,5 +81,9 @@
     color:$white;
     font-size: medium;
     padding: 10px;
+  }
+  img{
+    margin: auto;
+    display: block;
   }
 }
