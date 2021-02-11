@@ -3,7 +3,7 @@ layout: post
 title: "3. Jekyll Theme 적용 "
 subtitle: "Github 블로그에 jekyll theme 적용하기"
 date: 2021-02-11 22:58:00 +0900
-background: '/img/posts/jekyll-03.png'
+background: '/img/posts/jekyll-02.png'
 category: Study
 ---
 
