@@ -87,3 +87,20 @@
     display: block;
   }
 }
+
+.tags{
+  text-decoration:underline;
+  font-style: italic;
+  font-family: 'Noto Sans KR', serif;
+  color: $gray-700;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  &:focus,
+  &:hover {
+    color: $primary;
+    background-color: $gray-400;
+  }
+}
