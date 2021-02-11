@@ -14,7 +14,6 @@ github_username:    chaelin1211
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
-
 # Build settings
 markdown:           kramdown
 paginate:           5
