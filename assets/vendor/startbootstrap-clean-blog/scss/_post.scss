@@ -88,6 +88,8 @@
   }
 }
 
+
+
 .tag{
   text-decoration:underline;
   font-style: italic;
@@ -103,4 +105,9 @@
     color: $primary;
     background-color: $gray-400;
   }
+}
+
+.selected {
+  background-color: $gray-400;
+  text-decoration: none;
 }

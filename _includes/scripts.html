@@ -9,14 +9,15 @@
     currentTag = e.target.dataset.tag;
     filterByTagName(currentTag);
   })
-  
   function filterByTagName(tagName) {
     $('.d-none').removeClass('d-none');
-    $('.post-wrapper').each((index, elem) => {
-      if (!elem.hasAttribute('data-'+tagName)) {
-        $(elem).addClass('d-none');
-      }
-    });
+    if(tagName != ""){
+      $('.post-wrapper').each((index, elem) => {
+        if (!elem.hasAttribute('data-'+tagName)) {
+          $(elem).addClass('d-none');
+        }
+      });
+    }
     $('.tag').removeClass('selected');
     $('.tag[data-tag='+tagName+']').addClass('selected');
   }
