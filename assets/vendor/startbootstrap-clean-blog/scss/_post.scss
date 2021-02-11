@@ -50,21 +50,35 @@
   }
 }
 
-.post-category{
-  background-color: lightgray;
-  padding:0 5px 0 5px;
-  margin: 0;
-}
 
-.hight-block{
-  background-color: $gray-200;
-  text-align: center;
-  padding: 10px 0 10px 0;
-  margin: 10px 50px 10px 50px;
-}
+.post{
+  font-family: 'Nanum Myeongjo', serif;
+  .post-category{
+    background-color: lightgray;
+    padding:0 5px 0 5px;
+    margin: 0;
+  }
 
-.placeholder{
-  text-align: right;
-  font-style: italic;
-  color:$gray-600;
+  .hight-block{
+    background-color: $gray-200;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 10px 50px 10px 50px;
+  }
+
+  .placeholder{
+    text-align: right;
+    font-style: italic;
+    color:$gray-600;
+  }
+
+  li{
+    color:$gray-600;
+  }
+  pre{
+    background-color: $gray-800;
+    color:$white;
+    font-size: medium;
+    padding: 10px;
+  }
 }
