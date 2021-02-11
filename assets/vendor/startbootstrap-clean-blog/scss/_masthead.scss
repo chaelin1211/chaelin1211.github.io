@@ -3,6 +3,7 @@ header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
   margin-bottom: 50px;
   background: no-repeat center center;
+  opacity: 90%;
   background-color: $gray-600;
   background-attachment: scroll;
   position: relative;
@@ -77,6 +78,21 @@ header.masthead {
       .subheading {
         font-size: 30px;
       }
+    }
+    .post-tag{
+      font-family: 'Noto Sans KR', serif;
+      > span{
+        background-color: fade-out($white, .5);
+        font-size: small;
+        padding:5px;
+        margin: 2px;
+        &:focus,
+        &:hover {
+          background-color: fade-out($white, .3);
+          color: $primary;
+        }
+      }
+      margin-top: 15px;
     }
   }
 }
