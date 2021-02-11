@@ -1,5 +1,4 @@
 <span style="font-style: italic;">tags</span>
-
 {% for tag in site.data.tags %}
-  <span class="tags" data-tag="{{tag}}">{{tag}}</span>
+  <span class="tag" data-tag="{{tag}}">{{ site.data.format[tag] }}</span>
 {% endfor %}
