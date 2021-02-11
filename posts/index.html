@@ -3,6 +3,9 @@ layout: page
 title: Posts
 background: '/img/bg-post.jpg'
 ---
+<!-- 태그 -->
+{% include tag.html %}
+
 <!-- 전체 게시글 목록 -->
 {% for post in paginator.posts %}
 <article class="post-preview">
