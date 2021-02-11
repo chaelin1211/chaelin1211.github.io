@@ -84,6 +84,9 @@ Configuration file: C:/chaelin1211.github.io/_config.yml
 chcp 65001
 ```
 
++) jekyll 서버 열어놓은 상태로 수정하면 엄청난 cache 파일 폭탄을 맞습니다...
+<img class="img-fluid" src="/img/posts/inPost/jekyll-02-03.png">
+
 감사합니다:)
 
 <p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>
