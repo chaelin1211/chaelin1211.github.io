@@ -19,7 +19,7 @@ category: Study
 
 *****
 
-<h5>1. 테마 다운로드</h5>
+##### 1. 테마 다운로드
 테마는 유료, 무료 다양하구요! 전 깔끔한 clean 테마를 다운 받았습니다. 다음 링크에서 무료 테마들을 볼 수 있습니다. 
 <a class="hight-block" href="https://jekyllthemes.io/free">https://jekyllthemes.io/free</a>
 
@@ -56,7 +56,7 @@ zip파일로 다운받을 수도 있고 clone할 수도 있어요.
 <img class="img-fluid" src="/img/posts/inPost/jekyll-03-05.png">
 <span class="caption text-muted">저는 커스터마이징한게 있어서 처음 다운 data랑은 다른 부분도 있어요</span>
 
-<h5>2. 사용자 설정</h5>
+##### 2. 사용자 설정
 기존 내용에서 삭제할 수 있는 부분은 삭제하고 필요한 부분을 변경할게요.
 
 삭제해도 되는 파일은 다음과 같습니다.
@@ -113,7 +113,18 @@ plugins:
 
 이 부분은 다음 글로 적을게요. 너무 길어질거 같아서...
 
-<h5>3. 적용 확인</h5>
+###### 추가적인 내용
+
+*****
+
+* _posts 폴더: 게시글 저장 폴더 
+* assests: JavaScipt, CSS, jquery등을 저장한 폴더
+* _layout, _includes는 html 파일을 저장한 폴더인데 includes에 저장된 것들은 scrip나 공통요소입니다.
+* root의 index.html은 홈 화면입니다.
+
+*****
+
+##### 3. 적용 확인
 jekyll server를 켜서 확인해 보시면 됩니다~
 
 혹시 위의 동작에서 baseurl 삭제를 빼먹으셨다면 오류가 날 수 있어요!
