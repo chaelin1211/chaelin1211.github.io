@@ -21,6 +21,11 @@ layout: default
               <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
               on {{ page.date | date: '%B %d, %Y' }} 
             </span>
+            <div class="post-tag">
+              {% for tag in page.tags %}
+              <span>{{ site.data.format[tag] }}</span>
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
