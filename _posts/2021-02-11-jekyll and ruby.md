@@ -86,6 +86,8 @@ chcp 65001
 
 +) jekyll 서버 열어놓은 상태로 수정하면 엄청난 cache 파일 폭탄을 맞습니다...
 <img class="img-fluid" src="/img/posts/inPost/jekyll-02-03.png">
+이거 다 commit하지 마시고 수정한 파일만 commit 하세요! cache파일이라 수정할 때마다 내용이 바뀌어서 commit할 필요는 없고 jekyll server 켜고 수정하고 수정한 내용만 commit하면 서버 열어놓고 수정해도 괜찮네요!
+
 
 감사합니다:)
 
