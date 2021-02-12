@@ -1,10 +1,10 @@
 <script src="{{"/assets/vendor/jquery/jquery.min.js" | relative_url }}"></script>
 <script src="{{"/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relative_url }}"></script>
 <script src="{{"/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js" | relative_url }}"></script>
-
 <script src="{{"/assets/scripts.js" | relative_url }}"></script>
 
 <script>
+  // 태그를 위한 부분
   $("[data-tag]").click((e) => {
     currentTag = e.target.dataset.tag;
     filterByTagName(currentTag);
@@ -43,6 +43,10 @@
     return sval;
   }
 
+  // 테이블 css를 위한 부분
+  $(document).ready(function(){
+    $('table').addClass('table');
+  })
 </script>
 {% if page.url contains 'contact' %}
   <!-- Form Validation -->

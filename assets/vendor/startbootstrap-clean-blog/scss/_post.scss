@@ -57,6 +57,7 @@
 }
 
 .post{
+  font-family: 'Nanum Myeongjo', serif;
   .hight-block{
     background-color: $gray-200;
     text-align: center;
@@ -72,8 +73,6 @@
   }
   ol, ul{
     color:$gray-600;
-    margin-top:20px;
-    margin-bottom:20px;
   }
 }
 
