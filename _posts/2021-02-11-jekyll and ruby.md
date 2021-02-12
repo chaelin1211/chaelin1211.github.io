@@ -5,6 +5,7 @@ subtitle: "Jekyll을 이용하여 편해지기 - 로컬에서 미리 보고 수�
 date: 2021-02-11 11:27:00 +0900
 background: '/img/posts/jekyll-02.png'
 category: Study
+tags: [Github.io, jekyll]
 ---
 
 안녕하세요~
