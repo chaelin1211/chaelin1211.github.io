@@ -17,12 +17,8 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Posts</a>
           <div class="dropdown-menu">
-            {% for node in site.pages %}
-              {% if node.title != null %}
-                {% if node.layout == "category" %}
-                  <a class="nav-link" href="{{node.url}}">{{ node.title }}</a>
-                {% endif %}
-              {% endif %}
+            {% for category in site.data.category %}
+              <a class="nav-link" href="{{category | prepend: 'categories/' | relative_url }}">{{ category }}</a>
             {% endfor %}
           </div>
         </li>
