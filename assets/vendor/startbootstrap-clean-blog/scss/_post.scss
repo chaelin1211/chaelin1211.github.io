@@ -70,19 +70,10 @@
     font-style: italic;
     color:$gray-600;
   }
-
-  li{
+  ol, ul{
     color:$gray-600;
-  }
-  pre{
-    background-color: $gray-800;
-    color:$white;
-    font-size: medium;
-    padding: 10px;
-  }
-  img{
-    margin: auto;
-    display: block;
+    margin-top:20px;
+    margin-bottom:20px;
   }
 }
 

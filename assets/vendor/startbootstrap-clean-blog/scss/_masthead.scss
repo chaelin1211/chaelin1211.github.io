@@ -81,11 +81,8 @@ header.masthead {
     }
     .post-tag{
       font-family: 'Noto Sans KR', serif;
-<<<<<<< HEAD
+      margin-top: 15px;
       > a{
-=======
-      > span{
->>>>>>> 9417b907fafa6e7b219a972866e34b36ebd5005b
         background-color: fade-out($white, .5);
         font-size: small;
         padding:5px;
@@ -96,7 +93,6 @@ header.masthead {
           color: $primary;
         }
       }
-      margin-top: 15px;
     }
   }
 }
