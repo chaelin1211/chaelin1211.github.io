@@ -128,4 +128,6 @@ x = 0   y = 13
     - distance = 9일 때는 12321이고 13일 때는 최대거리 만큼의 이동과 r%3=1만큼의 이동을 추가해 **1233211** 입니다.
 
 감사합니다.
+
+<p class = "placeholder">참고한 게시글: https://www.acmicpc.net/board/view/13747</p>
 <p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>
