@@ -5,7 +5,7 @@ subtitle: "카테고리를 추가하고 카테고리 별로 게시글 분류해�
 date: 2021-02-12 08:29:00 +0900
 background: '/img/posts/jekyll-02.png'
 category: Study
-tags: [github블로그, jekyll]
+tags: [githubBlog, jekyll]
 ---
 
 안녕하세요~

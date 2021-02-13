@@ -5,7 +5,7 @@ subtitle: "우현이는 어린 시절, 지구 외의 다른 행성에서도 인�
 date: 2021-02-12 00:56:00 +0900
 background: '/img/posts/algorithm-01.jpg'
 category: Study
-tags: [algorithm, 백준알고리즘]
+tags: [algorithm, baekjoon]
 result: Success
 ---
 ### 문제
