@@ -72,8 +72,20 @@
   }
   ol{
     background-color: $gray-200;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    * p{
+      margin: 0px;
+    }
+    > li{
+      padding-top: 10px;
+    }
+  }
+  ul{
+    > li {
+      margin-bottom : 5px;
+    }
+    margin-bottom : 15px;
   }
 }
 
