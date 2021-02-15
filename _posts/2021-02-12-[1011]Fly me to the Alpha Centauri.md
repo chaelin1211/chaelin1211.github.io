@@ -131,4 +131,4 @@ x = 0   y = 13
 감사합니다.
 
 <p class = "placeholder">참고한 게시글: https://www.acmicpc.net/board/view/13747</p>
-<p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>
+<p class = "placeholder">Text by Chaelin. Photographs by Baekjoon Online Judge.</p>

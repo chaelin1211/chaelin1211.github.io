@@ -133,4 +133,4 @@ previousPost, nextPost에 이전 글, 이후 글 url이 저장됩니다. 원래 
 
 감사합니다:)
 
-<p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>
+<p class = "placeholder">Text by Chaelin. Photographs by Chaelin, Unsplash.</p>

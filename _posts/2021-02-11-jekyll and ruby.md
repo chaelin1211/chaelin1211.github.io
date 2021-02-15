@@ -92,4 +92,4 @@ chcp 65001
 
 감사합니다:)
 
-<p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>
+<p class = "placeholder">Text by Chaelin. Photographs by Chaelin, Unsplash.</p>

@@ -143,4 +143,4 @@ jekyll server가 안 된다면 꼭 두 번 째 글에서 jekyll install 코드 �
 
 감사합니다:)
 
-<p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>
+<p class = "placeholder">Text by Chaelin. Photographs by Chaelin, Unsplash.</p>

@@ -219,4 +219,4 @@ tag를 선택하고 다시 tag에 관계없이 전체 글을 보고싶을 땐 �
 *****
 
 감사합니다.
-<p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>
+<p class = "placeholder">Text by Chaelin. Photographs by Chaelin, Unsplash.</p>
