@@ -84,6 +84,5 @@ public class MainController {
 
 여기까지 Spring Boot 설정 확인 했습니다.
 
-
 감사합니다.
 <p class = "placeholder">Text by Chaelin. Photographs by Chaelin, Unsplash</p>
