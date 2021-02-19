@@ -20,8 +20,10 @@ tags: [githubBlog, error]
 위 두 가지 문제가 발생했습니다. 두 게시글의 제목은 다음과 같았습니다.
 
 *****
+
 2021-02-11-diary.md   
 2021-02-12-diary.md
+
 *****
 
 이름은 똑같고 날짜가 다르죠! 
@@ -39,10 +41,10 @@ tags: [githubBlog, error]
 글 목록 중 아래 글을 선택해 보았습니다.
 
 #### jekyll 서버에서 클릭 후 화면
-<img class="img-fluid" src="/img/posts/inPost/error-01-04.png">
+<img class="img-fluid" src="/img/posts/inPost/error-01-03.png">
 
 #### github.io에서 클릭 후 화면
-<img class="img-fluid" src="/img/posts/inPost/error-01-05.png">
+<img class="img-fluid" src="/img/posts/inPost/error-01-04.png">
 
 이처럼 같은 글을 선택했는데 다른 수행이 발생하네요...
 
@@ -59,8 +61,10 @@ tags: [githubBlog, error]
 위에서 예상한대로 두 글의 제목을 다음처럼 바꾸었더니 기능상 오류를 잡을 수 있었습니다.
 
 *****
+
 2021-02-11-diary-01.md   
-2021-02-12-diary-01.md
+2021-02-12-diary-02.md
+
 *****
 
 ### 결론
