@@ -2,7 +2,7 @@
 layout: post
 title: "[Error][짧은글] Github 블로그 게시 오류"
 subtitle: "게시글의 날짜와 링크에 오류가 생긴 경우"
-date: 2021-02-14 02:42:00 +0900
+date: 2021-02-19 05:27:00 +0900
 background: '/img/posts/jekyll-03.png'
 category: Study
 tags: [githubBlog, error]
