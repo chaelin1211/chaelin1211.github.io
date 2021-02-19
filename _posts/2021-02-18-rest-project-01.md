@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[REST] REST를 이용한 TO-DO List 만들기(1)"
+title: "[REST] TO-DO List 만들기(1)"
 subtitle: "프로젝트 구성과 Spring Boot 설정"
 date: 2021-02-18 22:33:00 +0900
 background: '/img/posts/rest-02.jpg'
