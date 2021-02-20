@@ -255,4 +255,4 @@ F12를 통해 개발자 툴을 엽니다. 네트워크 탭을 누르면 GET 함�
 <img class="img-fluid" src="/img/posts/inPost/rest-03-07.png">
 
 감사합니다.
-<p class = "placeholder">Text by Chaelin. Photographs by Chaelin, Unsplash</p>
+<p class = "placeholder">Text by Chaelin. Photographs by Chaelin, Unsplash.</p>
