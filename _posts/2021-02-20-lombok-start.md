@@ -120,4 +120,4 @@ RESTful 프로젝트 하며 처음 알게 되었는데 라이브러리들은 참
 
 많이 알수록 응용하기 쉬워지겠죠! 봐주셔서 감사합니다.
 
-<p class = "placeholder">Text by Chaelin. Photographs by Chaelin</p>
+<p class = "placeholder">Text by Chaelin. Photographs by Chaelin.</p>
