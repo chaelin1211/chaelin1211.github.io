@@ -5,7 +5,7 @@ subtitle: "서버 어플리케이션 디자인 - GET 구현을 위한 클래스 
 date: 2021-02-19 9:36:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
-tags: [rest, restful, miniproject]
+tags: [rest, restful, miniproject, spring, lombok]
 ---
 > 참고: <a src="https://imasoftwareengineer.tistory.com/34?category=772561">https://imasoftwareengineer.tistory.com/34?category=772561</a>
 
