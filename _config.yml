@@ -3,7 +3,7 @@ email:              cofls749@naver.com
 description:        공유와 기록을 위한 공간
 author:             ChaelinJ
 baseurl:            ""
-url:                "https://chaelin1211.github.io"
+url:                https://chaelin1211.github.io
 
 # Social Profiles
 # twitter_username:   SBootstrap
