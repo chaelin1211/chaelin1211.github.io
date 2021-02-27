@@ -11,8 +11,9 @@ tags: [rest, restful, miniproject, spring]
 
 위 글을 참조해 TO-DO List를 작성해보았습니다!
 
-목표: Spring Boot, HTML, CSS, javaScript, mySQL을 이용해 웹에서 사용 가능한 TO-DO List 작성
+목표: Spring Boot, HTML, CSS, javaScript, ~~mySQL~~mongoDB를 이용해 웹에서 사용 가능한 TO-DO List 작성
 
+> mySQL은 다뤄본 적이 있기 때문에 mongoDB로 변경하였습니다.
 *****
 
 1. 프로젝트 구성
