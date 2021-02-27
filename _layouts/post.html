@@ -48,7 +48,10 @@ comments: true
       <div class="col-lg-8 col-md-10 mx-auto post">
 
         {{ content }}
-        {% if page.comments %}
+
+        <hr>
+        
+        {% if page.category != "Life" %}
         <div id="disqus_thread"></div>
         <script>
           var disqus_config = function () {
@@ -65,8 +68,6 @@ comments: true
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
             Disqus.</a></noscript>
         {% endif %}
-
-        <hr>
         {% include pagingbutton.html%}
 
       </div>
