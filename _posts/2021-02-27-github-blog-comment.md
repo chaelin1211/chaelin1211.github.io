@@ -102,3 +102,43 @@ website name, url을 포함한 설정을 해줍니다.
 
 이제 블로그에 추가해 볼게요.
 
+### 댓글 블록 코드 추가
+##### post.html에 추가
+게시글 내용을 위한 템플릿 파일에 추가해 줄거에요!
+
+댓글 블록을 원하는 부분에 추가해 줍니다.
+
+DISQUS에선 comments 필드를 추가해서 원하는 글 마다 필드를 true로 설정해 댓글 블록을 생성하는데 저는 카테고리 별로 나누어 댓글 블록 유무를 설정했습니다.
+
+```
+{% raw %}
+{% if page.category != "Life" %}
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = 'https://~~.github.io{{ page.url }}';
+        this.page.identifier = '{{ page.id }}';
+      };
+      (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://~~.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https:/disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+{% endif %}
+{% endraw %}
+```
+> Life 카테고리는 혼잣말을 적는 데라 댓글 기능은 제외했습니다.
+
+<img class="img-fluid" src="/img/posts/inPost/disqus-11.png">
+
+이렇게 하면 jekyll server에서도 댓글 블록이 확인 가능하고 push하면 외부에서도 접근 가능합니다~
+
+!위 코드를 복사하면 안 되고 본인 disqus 설정에 따라 바꿔주시고, url에 따라 바꿔주셔야해요!
+
+감사합니다!
+
+<p class = "placeholder">Text by Chaelin. Photographs by Chaelin, Unsplash.</p>
