@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 <!-- 게시글 보기 -->
 <!-- Page Header -->
@@ -56,6 +57,10 @@ layout: default
     {% if psot.comments %}
     <div id="disqus_thread"></div>
     <script>
+      var disqus_config = function () {
+        this.page.url = 'https://chaelin1211.github.io{{ page.url }}';
+        this.page.identifier = '{{ page.id }}';
+      };
       (function () { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://chaelin1211-github-io.disqus.com/embed.js';
