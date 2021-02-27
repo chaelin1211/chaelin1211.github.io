@@ -3,7 +3,7 @@ layout: post
 title: "7. Github.io 댓글 추가"
 subtitle: "[Jekyll] 깃 블로그에 댓글 기능 추가하기"
 date: 2021-02-27 11:00:00 +0900
-background: '/img/posts/comments-01.png'
+background: '/img/posts/comments-01.jpg'
 category: Study
 tags: [githubBlog, jekyll]
 comments: true
