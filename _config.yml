@@ -4,7 +4,9 @@ description:        공유와 기록을 위한 공간
 author:             ChaelinJ
 baseurl:            ""
 url:                https://chaelin1211.github.io
-disqus-shortname: chaelin1211-github-io
+
+comments:
+  disqus-shortname: chaelin1211-github-io
 
 
 # Social Profiles
