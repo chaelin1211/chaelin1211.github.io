@@ -4,7 +4,8 @@ layout: default
 <!-- 게시글 보기 -->
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<header class="masthead"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
   {% else %}
   <header class="masthead">
     {% endif %}
@@ -15,8 +16,8 @@ layout: default
           <div class="post-heading">
             <h1>{{ page.title }}
               {% if page.result %}
-                {% assign result = page.result %}
-                {% include badge.html %}
+              {% assign result = page.result %}
+              {% include badge.html %}
               {% endif %}
             </h1>
             {% if page.subtitle %}
@@ -24,15 +25,15 @@ layout: default
             {% endif %}
             <span class="meta">Posted by
               <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
-              on {{ page.date | date: '%B %d, %Y' }} 
+              on {{ page.date | date: '%B %d, %Y' }}
             </span>
             <div class="post-tag">
               {% for tag in page.tags %}
-                {% if site.data.tags contains tag %}
-                  <a href="/posts/?tag={{ tag }}">
-                    {{ site.data.format[tag] }}
-                  </a>
-                {% endif %}
+              {% if site.data.tags contains tag %}
+              <a href="/posts/?tag={{ tag }}">
+                {{ site.data.format[tag] }}
+              </a>
+              {% endif %}
               {% endfor %}
             </div>
           </div>
@@ -52,4 +53,17 @@ layout: default
 
       </div>
     </div>
+    {% if psot.comments %}
+    <div id="disqus_thread"></div>
+    <script>
+      (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://chaelin1211-github-io.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+    {% endif %}
   </div>
