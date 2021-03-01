@@ -2,7 +2,7 @@
 layout: post
 title: "[REST] TO-DO List 만들기(3) - POST"
 subtitle: "데이터를 생성하는 POST API 생성! Spring과 mongoDB"
-date: 2021-03-02 00:00:00 +0900
+date: 2021-03-02 04:00:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
 tags: [rest, restful, miniproject, spring, mongodb]
