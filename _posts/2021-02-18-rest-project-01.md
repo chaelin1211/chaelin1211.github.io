@@ -7,7 +7,7 @@ background: '/img/posts/rest-02.jpg'
 category: Study
 tags: [rest, restful, miniproject, spring]
 ---
-> 참고: <a src="https://imasoftwareengineer.tistory.com/34?category=772561">https://imasoftwareengineer.tistory.com/34?category=772561</a>
+> 참고: <a href="https://imasoftwareengineer.tistory.com/34?category=772561">https://imasoftwareengineer.tistory.com/34?category=772561</a>
 
 위 글을 참조해 TO-DO List를 작성해보았습니다!
 
