@@ -7,7 +7,7 @@ background: '/img/posts/rest-02.jpg'
 category: Study
 tags: [rest, restful, miniproject, spring, mongodb]
 ---
-> 참고: <a href="https://imasoftwareengineer.tistory.com/34?category=772561">https://imasoftwareengineer.tistory.com/34?category=772561</a>
+> 참고: <a href="https://imasoftwareengineer.tistory.com/37?category=772561">https://imasoftwareengineer.tistory.com/37?category=772561</a>
 
 이번 글에선 RESTful API의 오퍼레이션 중 POST에 집중해 서버 어플리케이션을 작성해 보겠습니다.
 
