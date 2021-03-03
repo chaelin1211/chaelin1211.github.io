@@ -12,3 +12,5 @@ lombok: Lombok
 markdown: MarkDown
 database: Database
 mongodb: mongoDB
+reactjs: React.js
+nodejs: Node.js
