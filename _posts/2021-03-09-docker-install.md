@@ -30,7 +30,7 @@ tags: [docker]
 > 운영 체제 중 가장 기본적인 컴퓨터의 입출력을 처리하는 소프트웨어이다. 사용자가 컴퓨터를 켜면 시작되는 프로그램으로 **주변 장치와 컴퓨터 운영 체제 사이**의 데이터의 흐름을 관리한다.
 
 ### 1. 도커 설치파일 다운로드 및 설치
-<a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">docer.com</a>에 들어가서 [Get Docker]를 클릭합니다.
+<a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">docker.com</a>에 들어가서 [Get Docker]를 클릭합니다.
 
 <img class="img-fluid" src="/img/posts/inPost/docker-02-02.png">
 
