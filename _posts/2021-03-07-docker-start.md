@@ -11,6 +11,10 @@ Docker란 말은 많이 들었는데 어디에 어떻게 사용되는지 감을 
 
 이번 게시글을 계기로 확실한 개념을 잡고 가도록 하겠습니다.
 
+도커 설치는 다음 글에서 참조해주세요.
+> <a href="https://chaelin1211.github.io/study/2021/03/09/docker-install.html">
+Docker 설치 </a>
+
 ### 1. Docker 도커란?
 애플리케이션을 신속하게 **구축, 테스트 및 배포**할 수 있는 소프트웨어 플랫폼입니다.
 
@@ -70,6 +74,10 @@ Docker는 **코드를 실행하는 표준 방식**을 제공합니다.
 **Docker 이미지를 빌드하기 위한 지침**을 포함하는 텍스트 파일입니다. 
 
 배치 스크립트처럼 첫 번째 줄에 지정된 **기본 이미지**에서 시작한 다음, 필요한 작업 환경이 완성될 때까지 지침에 따라 **필요한 프로그램을 설치**하고 **파일을 복사**하는 등의 작업을 수행합니다.
+
+> Dockerfile은 왜 필요할까요?
+> 이 부분은 입문 단계인 저한테는 잘 와닿지 않았지만 익혀가는 중에 유용한 부분이라 생각해 좋은 내용이 있는 블로그 링크를 첨부합니다.
+> <a href="https://blog.naver.com/PostView.nhn?blogId=alice_k106&logNo=220646382977&parentCategoryNo=7&categoryNo=&viewDate=&isShowPopularPosts=true&from=search">Dockerfile 개요 및 간단한 작성법 가이드</a>
 
 ##### 빌드
 컨테이너 이미지를 빌드하는 작업입니다.
