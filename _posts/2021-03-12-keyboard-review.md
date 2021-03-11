@@ -35,8 +35,10 @@ category: Review
 
 소리는 집에서 쓰긴 좋으나 조용한 곳에선 좀 거슬릴 정도이네요.
 
-<video controls width="250">
-    <source src="/img/posts/inPost/keyboard-01.mp4">
+<video controls>
+    <source src="/img/posts/inPost/keyboard-01.mp4" type="video/mp4">
+    <source src="/img/posts/inPost/keyboard-01.ogg" type="video/ogg">
+    영상이 안 보이신다면 모바일로 확인해 주세요.
 </video>
 
 #### 2-2 멀티 페어링
