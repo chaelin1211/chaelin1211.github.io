@@ -3,7 +3,7 @@ layout: post
 title: "COSY 블루투스 키보드"
 subtitle: "Multi Paring 지원 모델"
 date: 2021-03-12 00:46:03 +0900
-background: '/img/posts/inPost/KakaoTalk_20210211_021427030.jpg'
+background: '/img/posts/inPost/keyboard-01.jpg'
 category: Review
 ---
 안녕하세요.
