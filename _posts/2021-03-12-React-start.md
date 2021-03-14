@@ -2,7 +2,7 @@
 layout: post
 title: "[React] React 시작"
 subtitle: "create-react-app 살펴보기"
-date: 2021-03-04 23:00:00 +0900
+date: 2021-03-12 23:00:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
 tags: [reactjs]
