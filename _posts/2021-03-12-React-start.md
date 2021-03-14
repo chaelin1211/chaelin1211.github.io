@@ -187,6 +187,7 @@ create-react-app은 템플릿이 제공되어 참 편리한 거 같아요~
 필요에 맞게 title을 수정하거나 Bootstrap을 적용할 수 있겠네요.
 
 > comment는 생략하고 가져온 코드입니다.
+
 ```
 <!DOCTYPE html>
 <html lang="en">
