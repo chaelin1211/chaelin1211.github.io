@@ -39,7 +39,7 @@ tags: [designpattern]
 <img class="img-fluid" src="/img/posts/inPost/types-of-designpattern.png">
 
 ### 생성(Creational) 패턴 
-* 추상 팩토리(Abstract Factory)
+* <a href="https://chaelin1211.github.io/study/2021/03/17/Abstract-Factory.html">추상 팩토리(Abstract Factory)</a>
     - 구체적인 클래스에 의존하지 않고 **서로 연관되거나 의존적인 객체들의 조합**을 만드는 인터페이스를 제공하는 패턴
 
 * 팩토리 메서드(Factory Method)
