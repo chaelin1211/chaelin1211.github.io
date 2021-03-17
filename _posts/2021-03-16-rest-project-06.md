@@ -7,8 +7,8 @@ background: '/img/posts/rest-02.jpg'
 category: Study
 tags: [rest, restful, miniproject, spring, docker, reactjs, nodejs]
 ---
-> 참고
-> <a href="https://imasoftwareengineer.tistory.com/41?category=772561">https://imasoftwareengineer.tistory.com/41?category=772561</a>
+> 참고   
+> <a href="https://imasoftwareengineer.tistory.com/41?category=772561">https://imasoftwareengineer.tistory.com/41?category=772561</a>   
 > <a href="https://github.com/schmidtp0740/react-todolist">https://github.com/schmidtp0740/react-todolist</a>
 
 이번엔 저번에 만들었던 프론트 엔드 웹 서버에서 RESTful API 서버로 API 콜을 해보겠습니다.
