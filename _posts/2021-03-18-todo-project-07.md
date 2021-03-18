@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[REST] TO-DO List 만들기(7)"
+title: "[REST] TO-DO List 만들기(7) - PUT,DELETE"
 subtitle: "기능 추가하기 (PUT, DELETE)"
 date: 2021-03-18 23:51:00 +0900
 background: '/img/posts/rest-02.jpg'
