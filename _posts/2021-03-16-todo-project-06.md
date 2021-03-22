@@ -194,26 +194,23 @@ export default class TodoList extends Component {
 
     getTodoList() {
         this.todoService.getAll((data) => {
-           this.setState({todoList:data}); 
+            this.setState({ todoList: data });
         })
     }
 
     setTodoList() {
-        console.log(this.state.todoList);
-        if(this.state.todoList instanceof Array){
-            return this.state.todoList.map(function(object, i){
-                return <TodoListRow obj={object} key={i} />;
+        if (this.state.todoList instanceof Array) {
+            return this.state.todoList.map(function (object, i) {
+                return <TodoListRow item={object.data} key={i} />;
             })
-          }
+        }
     }
     
     render() {
         return (
-            <table>
-                <tbody>
-                    {this.setTodoList()}
-                </tbody>
-            </table>
+            <div className="todoList">
+                {this.setTodoList()}
+            </div>
         )
     }
 }
@@ -256,7 +253,7 @@ componentWillMount을 통해 render 전에 To-DO List를 구성하는 getTodoLis
 ```
 getTodoList() {
     this.todoService.getAll((data) => {
-       this.setState({todoList:data}); 
+        this.setState({ todoList: data });
     })
 }
 ```
@@ -267,12 +264,11 @@ TodoService 객체를 통해 Get 해온 data 각각을 state 내의 todoList Arr
 
 ```
 setTodoList() {
-    console.log(this.state.todoList);
-    if(this.state.todoList instanceof Array){
-        return this.state.todoList.map(function(object, i){
-            return <TodoListRow obj={object} />;
+    if (this.state.todoList instanceof Array) {
+        return this.state.todoList.map(function (object, i) {
+            return <TodoListRow item={object.data} key={i} />;
         })
-      }
+    }
 }
 ```
 
@@ -283,11 +279,9 @@ setTodoList() {
 ```
 render() {
     return (
-        <table>
-            <tbody>
-                {this.setTodoList()}
-            </tbody>
-        </table>
+        <div className="todoList">
+            {this.setTodoList()}
+        </div>
     )
 }
 ```
