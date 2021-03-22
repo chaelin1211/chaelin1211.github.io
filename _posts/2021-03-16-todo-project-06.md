@@ -177,25 +177,24 @@ export default class TodoService {
 TodoService에서 받아온 Response를 List로 작성해 화면에 출력될 JSX 코드를 작성하는 역할을 합니다.
 
 ```
+
 import React, { Component } from 'react';
 import TodoListRow from './TodoListRow';
 import TodoService from './TodoService';
+import TodoInput from './TodoInput';
 
 export default class TodoList extends Component {
     constructor(props) {
         super(props);
         this.todoService = new TodoService();
-        this.state = { todoList: '' };
+        this.state = { todoList: [] };
+        this.initList();
     }
 
-    componentWillMount() {
-        this.getTodoList();
-    }
-
-    getTodoList() {
+    initList() {
         this.todoService.getAll((data) => {
-            this.setState({ todoList: data });
-        })
+            this.setState({ todoList: data })
+        });
     }
 
     setTodoList() {
@@ -205,11 +204,14 @@ export default class TodoList extends Component {
             })
         }
     }
-    
+
     render() {
         return (
-            <div className="todoList">
-                {this.setTodoList()}
+            <div>
+                <TodoInput todoList={this}></TodoInput>
+                <div className="todoList">
+                    {this.setTodoList()}
+                </div>
             </div>
         )
     }
@@ -224,7 +226,8 @@ export default class TodoList extends Component {
 constructor(props) {
     super(props);
     this.todoService = new TodoService();
-    this.state = { todoList: '' };
+    this.state = { todoList: [] };
+    this.initList();
 }
 ```
 
@@ -236,27 +239,21 @@ constructor(props) {
 
 즉, ReactDOM.Render() 메서드를 매번 호출하여 코드가 지저분하게 되는 것을 방지합니다.
 
-*****
+todoList에 todo item들을 저장해 추가/삭제 시 자동 render 될 수 있게 합니다.
 
-```
-componentWillMount() {
-    this.getTodoList();
-}
-```
-
-컴포넌트 안에서 method의 실행 순서(컴포넌트 생명주기)는 constructor -> componentWillMount -> render -> componentDidMount 순으로 진행됩니다.
-
-componentWillMount을 통해 render 전에 To-DO List를 구성하는 getTodoList() 메소드를 호출합니다.
+```this.initList();```를 통해 호출됨과 동시에 list를 불러옵니다.
 
 *****
 
 ```
-getTodoList() {
+initList() {
     this.todoService.getAll((data) => {
-        this.setState({ todoList: data });
-    })
+        this.setState({ todoList: data })
+    });
 }
 ```
+
+처음 list를 출력할 때, 초기화 할 때 사용하는 메소드입니다.
 
 TodoService 객체를 통해 Get 해온 data 각각을 state 내의 todoList Array에 추가해줍니다.
 
@@ -279,7 +276,7 @@ setTodoList() {
 ```
 render() {
     return (
-        <div className="todoList">
+        <div>
             {this.setTodoList()}
         </div>
     )
@@ -293,26 +290,24 @@ render() {
 ```
 import React, { Component } from 'react';
 
-export default class TodoListRow extends Component{
-    constructor(props) {
-        super(props);
-    }
-  
-    render() {
-      return (
-          <tr>
-            <td>
-                {this.props.obj.data.title}
-            </td>
-          </tr>
-      );
-    }
+export default class TodoListRow extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+          {this.props.item.title}
+      </div>
+    );
+  }
 }
 ```
 
 아까 TodoList.js에서 setTodoList() 메서드에서 호출했던 코드입니다.
 
-tr, td 태그로 각각 데이터의 타이틀을 출력해 주는 동작을 합니다.
+각 list 목록을 하나씩 출력하며, 각각의 앞에 체크박스도 같이 출력합니다.
 
 ### 6. 화면 출력 테스트
 테스트를 위해 postman으로 몇 가지 데이터를 더 추가해서 출력해 보겠습니다.
