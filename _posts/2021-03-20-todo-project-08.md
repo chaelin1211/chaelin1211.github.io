@@ -218,6 +218,10 @@ public class WebConfig implements WebMvcConfigurer {
 ```
 이 부분을 추가하지 않아도 기본적으로 GET, HEAD, POST가 가능하지만 PUT 메소드가 없기 때문에 위 코드를 추가했습니다.
 
+### 현재 화면
+CSS까지 적용한 화면입니다.
+<img class="img-fluid" src="/img/posts/inPost/rest-09-01.png">
+
 ### 끝
 Delete까지 하려고 했는데 글이 길어져 POST 까지만 하고 다음 글에서 Delete 추가하겠습니다.
 
