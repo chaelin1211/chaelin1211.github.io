@@ -145,10 +145,10 @@ Service의 Delete를 이용할 Controller의 Delete메서드를 만들어주세�
 
 ##### TodoController 
 ```
-@RequestMapping(method=RequestMethod.DELETE)
-public @ResponseBody TodoResponse delete(@RequestBody final TodoRequest todoRequest){
+@RequestMapping(method=RequestMethod.DELETE, value = "/{id}")
+public @ResponseBody TodoResponse delete(@PathVariable(value="id") String id){
     List<String> errors = new ArrayList<>();
-    TodoBean todoBean = TodoAdapter.toTodoBean(todoRequest);
+    TodoBean todoBean = todoService.get(id);
     try{
         todoBean = todoService.delete(todoBean);
     }catch(final Exception e){
@@ -159,7 +159,7 @@ public @ResponseBody TodoResponse delete(@RequestBody final TodoRequest todoRequ
 }
 ```
 
-Update 메소드와 유사합니다.
+id를 url로 전달 받아 get을 통해 TodoBean 객체를 찾아 todoService로 삭제해 줍니다.
 
 #### Test
 1) 기존에 POST로 생성해 놓은 아이템의 id를 DELETE으로 넘겨줍니다.
