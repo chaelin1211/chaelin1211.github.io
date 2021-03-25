@@ -135,7 +135,9 @@ handleCreate(event){
     const todoRequest = {
         title: this.state.title
     }
-    this.todoService.post(todoRequest, (data)=>this.props.todoList.addTodoList(data));
+    this.todoService.post(todoRequest, (data)=>this.props.todoList.addTodoList(data)
+    event.target.reset();
+    );
 }
 ```
 
@@ -156,6 +158,11 @@ todoService의 post로 위에서 생성한 todoRequest 객체를 보내고, call
 addTodoList로 생성된 객체가 보내지며 list가 갱신됩니다. 
 
 props는 호출될 때 전달받은 변수(TodoList 객체)를 이용할 수 있게 합니다.
+
+```
+event.target.reset();
+```
+input field 초기화하기 위한 코드입니다. 입력 후 필드 초기화 해주기는 필수!
 
 ##### components/TodoInput.js
 ```
