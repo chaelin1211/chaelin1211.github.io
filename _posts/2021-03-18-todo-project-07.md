@@ -162,11 +162,10 @@ public @ResponseBody TodoResponse delete(@PathVariable(value="id") String id){
 id를 url로 전달 받아 get을 통해 TodoBean 객체를 찾아 todoService로 삭제해 줍니다.
 
 #### Test
-1) 기존에 POST로 생성해 놓은 아이템의 id를 DELETE으로 넘겨줍니다.
+1) 기존에 POST로 생성해 놓은 아이템의 id를 DELETE으로 넘겨줍니다. url 뒷 부분에 추가로 입력하면 됩니다.
 <img class="img-fluid" src="/img/posts/inPost/rest-08-05.png">
 
 SEND를 누르면 다음처럼 삭제된 아이템이 Return됩니다.
-
 <img class="img-fluid" src="/img/posts/inPost/rest-08-06.png">
 
 2) GET을 통해 확인합니다.
