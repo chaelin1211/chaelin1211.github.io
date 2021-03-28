@@ -42,7 +42,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/03/17/Abstract-Factory.html">추상 팩토리(Abstract Factory)</a>
     - 구체적인 클래스에 의존하지 않고 **서로 연관되거나 의존적인 객체들의 조합**을 만드는 인터페이스를 제공하는 패턴
 
-* 팩토리 메서드(Factory Method)
+* <a href="https://chaelin1211.github.io/study/2021/03/18/factory-method.html">팩토리 메서드(Factory Method)</a>
     - **객체 생성 처리**를 서브 클래스로 분리해서 처리하도록 캡슐화하는 패턴
 
 * 싱글톤(Singleton)
