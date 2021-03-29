@@ -45,7 +45,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/03/18/factory-method.html">팩토리 메서드(Factory Method)</a>
     - **객체 생성 처리**를 서브 클래스로 분리해서 처리하도록 캡슐화하는 패턴
 
-* 싱글톤(Singleton)
+* <a href="https://yaboong.github.io/design-pattern/2018/09/28/thread-safe-singleton-patterns/">싱글톤(Singleton)</a>
     - 전역 변수를 사용하지 않고 객체를 하나만 생성하도록 하며, 생성된 객체를 어디에서든 참조할 수 있도록 하는 패턴
 
 * 빌더(Builder)
