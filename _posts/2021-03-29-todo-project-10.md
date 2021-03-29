@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[REST][React] TO-DO List 만들기(9) - UPDATE(1)"
+title: "[REST][React] TO-DO List 만들기(10) - UPDATE(1)"
 subtitle: "React로 기능 추가하기 - UDPATE"
 date: 2021-03-29 17:52:00 +0900
 background: '/img/posts/rest-02.jpg'
