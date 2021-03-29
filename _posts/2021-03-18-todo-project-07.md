@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[REST] TO-DO List 만들기(7) - PUT,DELETE"
-subtitle: "기능 추가하기 (PUT, DELETE)"
+title: "[REST] TO-DO List 만들기(7) - UPDATE, DELETE"
+subtitle: "기능 추가하기 (UPDATE, DELETE)"
 date: 2021-03-18 23:51:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
@@ -10,11 +10,11 @@ tags: [rest, restful, miniproject, spring, reactjs, nodejs]
 
 안녕하세요.
 
-GET, POST 기능까지 구현한 프로젝트를 확장해서 PUT, DELETE 기능 구현 해보겠습니다.
+GET, POST 기능까지 구현한 프로젝트를 확장해서 UPDATE, DELETE 기능 구현 해보겠습니다.
 
 여기까지 하면 BackEnd에서 필요한 부분의 대부분은 완성됩니다.
 
-### 1. PUT - Update
+### 1. PATCH - Update
 #### Service에 update 메소드 추가
 ##### TodoService
 ```
@@ -43,7 +43,7 @@ Service의 Update 메소드를 이용할 Controller의 Update 메서드를 만�
 
 ##### TodoController
 ```
-@RequestMapping(method=RequestMethod.PUT)
+@RequestMapping(method=RequestMethod.PATCH)
 public @ResponseBody TodoResponse update(@RequestBody final TodoRequest todoRequest){
     List<String> errors = new ArrayList<>();
     TodoBean todoBean = TodoAdapter.toTodoBean(todoRequest);
@@ -58,12 +58,12 @@ public @ResponseBody TodoResponse update(@RequestBody final TodoRequest todoRequ
 ```
 create 메소드와 매우 유사한 형태의 메소드가 생성되었습니다.
 
-1) RequestMethod를 PUT으로 변경   
+1) RequestMethod를 PATCH으로 변경   
 2) todoService의 update 메서드 호출
 
 위의 두 가지 차이가 있습니다.
 
-> PUT을 사용하지 않고 POST만 이용하는 어플리케이션에선 Insert+Update로 upsert 메소드를 사용하기도 한답니다. 존재하지 않을 경우 create로 생성하고, 존재하면 update로 수정하는 것입니다.
+> UPDATE를 사용하지 않고 POST만 이용하는 어플리케이션에선 Insert+Update로 upsert 메소드를 사용하기도 한답니다. 존재하지 않을 경우 create로 생성하고, 존재하면 update로 수정하는 것입니다.
 
 #### 기존 TodoAdapter 수정
 위 Controller에서 TodoRequest를 TodoBean으로 수정해주는 TodoAdapter의 메소드를 이용합니다.
