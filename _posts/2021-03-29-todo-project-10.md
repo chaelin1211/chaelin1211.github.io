@@ -164,6 +164,12 @@ get(request, callback) {
 이 메소드로 title과 done을 수정하는 메소드를 TodoListRow에 만들어 줍니다.
 ##### components/TodoListRow.js
 ```
+componentDidUpdate(prevProps, prevState) {
+  if (this.props.id !== prevProps.id) {
+    this.setData();
+  }
+}
+
 setData(){
   const todoRequest = {
     id: this.props.id
@@ -175,6 +181,8 @@ setData(){
 ```
 
 이 메소드를 constructor에서 호출해주면 바로 state가 변경되며 화면에 출력됩니다.
+
+componentDidUpdate를 이용해 props의 id가 바뀔 경우 title, done을 다시 조회합니다. 삭제 버튼을 누를 경우, 이 로직이 없으면 id와 title이 맞지 않게 밀려버립니다.
 
 ### 이제 진짜 TodoListRow에 handleCheck 추가
 ##### components/TodoListRow.js
