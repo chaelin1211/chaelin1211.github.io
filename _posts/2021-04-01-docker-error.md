@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "[Error] Docker Run 시에 발생한 오류"
-subtitle: "error during connect: This error may indicate that the docker daemon is not running.: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/images/json: open //./pipe/docker_engine: The system cannot find the file specified."
-date: 2021-03-12 18:28:00 +0900
+subtitle: "error during connect: This error may indicate that the docker daemon is not running. The system cannot find the file specified."
+date: 2021-04-01 19:55:00 +0900
 background: '/img/posts/game_over.jpg'
 category: Study
 tags: [spring, error, docker]
@@ -12,13 +12,9 @@ tags: [spring, error, docker]
 잘 되던 docker가 계속 오류가 발생해서 여러 방법을 해봤는데, 검색해서 다른 분들이 해결 성공한 방법이랑 제가 성공한 방법을 모아서 정리 해보았습니다.
 
 ### 오류 내용
-```
 error during connect: This error may indicate that the docker daemon is not running.: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/images/json: open //./pipe/docker_engine: The system cannot find the file specified.
-```
 
-```
 error during connect: This error may indicate that the docker daemon is not running.: Post http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/build?buildargs=%7B%7D&cachefrom=%5B%5D&cgroupparent=&cpuperiod=0&cpuquota=0&cpusetcpus=&cpusetmems=&cpushares=0&dockerfile=Dockerfile&labels=%7B%7D&memory=0&memswap=0&networkmode=default&rm=1&shmsize=0&t=restful_springboot&target=&ulimits=null&version=1: open //./pipe/docker_engine: The system cannot find the file specified.
-```
 
 ### 시도 1: docker 재 실행
 docker 접속을 위해 local에서 docker Desktop 앱을 실행해서 연결 해줍니다.
