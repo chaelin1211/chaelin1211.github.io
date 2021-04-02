@@ -16,6 +16,8 @@ tags: [rest, restful, miniproject, spring, reactjs, nodejs, mongodb, docker]
 #### RESTful
 처음 RESTful이란 것에 개념을 확실히 알지 못하고 위와 같은 목표를 잡았었는데, 아래 영상을 보고 나서야 제가 진짜 목표 했던 것은 REST API가 아님을 알게 되었습니다.
 
+<a href="https://www.youtube.com/watch?app=desktop&v=RP_f5dMoHFc&t=589s">그런 REST API로 괜찮은가</a>
+
 제가 목표로 한 것은 긴 시간에 걸쳐 유지/보수 할 프로그램이 아니고, HTTP method를 익히기 위한 개인적인 프로젝트 수행이었기 때문에 REST의 제약 조건을 맞추는 것에 대한 난이도를 떠나서 다른 목적을 향한다고 결론 내렸습니다.
 
 결론적으로 제 프로젝트는 REST API의 Self-Descriptive와 HATEOAS를 만족하지 않기에 REST API라 할 수 없습니다.
