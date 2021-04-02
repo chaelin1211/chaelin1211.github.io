@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[REST] TO-DO List 만들기(12) - Docker에 올리기"
+title: "[Project] TO-DO List 만들기(12) - Docker에 올리기"
 subtitle: "도커에 Spring boot + Mongo DB 올리기"
 date: 2021-04-02 18:49:00 +0900
 background: '/img/posts/rest-02.jpg'

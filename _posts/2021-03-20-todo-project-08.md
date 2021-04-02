@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[REST][React] TO-DO List 만들기(8) - POST"
+title: "[Project][React] TO-DO List 만들기(8) - POST"
 subtitle: "React로 기능 추가하기 - POST"
 date: 2021-03-20 01:50:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
-tags: [rest, restful, miniproject, spring, reactjs, nodejs]
+tags: [miniproject, spring, reactjs, nodejs]
 ---
 이번엔 프론트 엔드 측에서 기능을 구현하는 부분입니다.
 

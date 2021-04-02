@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[REST] TO-DO List 만들기(1)"
+title: "[Project] TO-DO List 만들기(1)"
 subtitle: "프로젝트 구성과 Spring Boot 설정"
 date: 2021-02-18 22:33:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
-tags: [rest, restful, miniproject, spring]
+tags: [miniproject, spring]
 ---
 > 참고: <a href="https://imasoftwareengineer.tistory.com/34?category=772561">https://imasoftwareengineer.tistory.com/34?category=772561</a>
 

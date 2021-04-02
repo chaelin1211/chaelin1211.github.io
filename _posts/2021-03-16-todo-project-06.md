@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[REST] TO-DO List 만들기(6)"
+title: "[Project] TO-DO List 만들기(6)"
 subtitle: "React.js/Node.js 앱에서 API Call 하기"
 date: 2021-03-16 00:48:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
-tags: [rest, restful, miniproject, spring, docker, reactjs, nodejs]
+tags: [miniproject, spring, docker, reactjs, nodejs]
 ---
 > 참고   
 > <a href="https://imasoftwareengineer.tistory.com/41?category=772561">https://imasoftwareengineer.tistory.com/41?category=772561</a>   

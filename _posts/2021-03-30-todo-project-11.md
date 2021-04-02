@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[REST][React] TO-DO List 만들기(11) - UPDATE(2)"
+title: "[Project][React] TO-DO List 만들기(11) - UPDATE(2)"
 subtitle: "React로 기능 추가하기 - UDPATE"
 date: 2021-03-30 22:37:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
-tags: [rest, restful, miniproject, spring, reactjs, nodejs]
+tags: [miniproject, spring, reactjs, nodejs]
 ---
 저번에 Done 값으로 체크박스 화면에 띄우고 클릭 시 체크가 되도록 하는 부분까지 했습니다.
 

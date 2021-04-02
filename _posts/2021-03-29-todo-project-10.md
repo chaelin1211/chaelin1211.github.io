@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[REST][React] TO-DO List 만들기(10) - UPDATE(1)"
+title: "[Project][React] TO-DO List 만들기(10) - UPDATE(1)"
 subtitle: "React로 기능 추가하기 - UDPATE"
 date: 2021-03-29 17:52:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
-tags: [rest, restful, miniproject, spring, reactjs, nodejs]
+tags: [miniproject, spring, reactjs, nodejs]
 ---
 
 React 쪽에서 이번엔 UPDATE 추가합니다. 글 분량 초과로 이번 글에선 check 박스로 done value 수정하는 부분만 포함하였습니다.

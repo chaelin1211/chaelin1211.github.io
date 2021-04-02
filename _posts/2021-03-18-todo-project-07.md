@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[REST] TO-DO List 만들기(7) - UPDATE, DELETE"
+title: "[Project] TO-DO List 만들기(7) - UPDATE, DELETE"
 subtitle: "기능 추가하기 (UPDATE, DELETE)"
 date: 2021-03-18 23:51:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
-tags: [rest, restful, miniproject, spring, reactjs, nodejs]
+tags: [miniproject, spring, reactjs, nodejs]
 ---
 
 안녕하세요.

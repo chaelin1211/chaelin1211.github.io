@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[REST] TO-DO List 만들기(4)"
+title: "[Project] TO-DO List 만들기(4)"
 subtitle: "React.JS와 Node.JS를 이용해 프론트엔드 개발"
 date: 2021-03-04 23:00:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
-tags: [rest, restful, miniproject, spring, reactjs, nodejs]
+tags: [miniproject, spring, reactjs, nodejs]
 ---
 > 참고: <a href="https://imasoftwareengineer.tistory.com/39">https://imasoftwareengineer.tistory.com/39</a>
 

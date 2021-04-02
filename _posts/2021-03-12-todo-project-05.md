@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[REST] TO-DO List 만들기(5)"
+title: "[Project] TO-DO List 만들기(5)"
 subtitle: "도커 활용: 도커에 스트링 부트 올리기"
 date: 2021-03-12 19:17:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
-tags: [rest, restful, miniproject, spring, docker]
+tags: [miniproject, spring, docker]
 ---
 > 참고: <a href="https://imasoftwareengineer.tistory.com/40">https://imasoftwareengineer.tistory.com/40</a>
 

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[REST][React] TO-DO List 만들기(9) - DELETE"
+title: "[Project][React] TO-DO List 만들기(9) - DELETE"
 subtitle: "React로 기능 추가하기 - DELETE / input field 체크 & 리셋"
 date: 2021-03-27 11:16:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
-tags: [rest, restful, miniproject, spring, reactjs, nodejs]
+tags: [miniproject, spring, reactjs, nodejs]
 ---
 
 React 쪽에서 이번엔 DELETE를 추가합니다.
