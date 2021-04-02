@@ -14,6 +14,11 @@ tags: [miniproject, spring, docker, mongodb]
 * docker-compose.yml을 이용해 Spring boot와 Mongo DB를 도커에 올립니다.
 * 기존 플젝에서 사용하던 임베디드 Mongo DB에서 벗어나 Docker에 Mongo DB를 올리고 Spring boot에서 이 Mongo DB를 이용하도록 설정합니다.
 
+### 참고!
+저는 이전 글에서 테스트를 다 spring boot 서버로 진행해서 8080 포트를 이용했습니다.
+
+React의 url도 다 8080으로 작성했었는데 5000(도커 포트)으로 바꿔주세요.
+
 ### docker-compose.yml
 ##### docker의 compose
 웹 애플리케이션 제작엔 데이터베이스, Back-end API, Front-end API 같은 여러 컴포넌트가 필요합니다. 
