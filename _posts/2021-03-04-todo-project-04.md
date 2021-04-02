@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Project] TO-DO List 만들기(4)"
-subtitle: "React.JS와 Node.JS를 이용해 프론트엔드 개발"
+subtitle: "[설정]React.JS와 Node.JS를 이용해 프론트엔드 개발"
 date: 2021-03-04 23:00:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study

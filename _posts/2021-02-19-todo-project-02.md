@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Project] TO-DO List 만들기(2) - GET"
-subtitle: "[RESTful API] 서버 어플리케이션 디자인 - GET 구현을 위한 클래스 생성"
+subtitle: "서버 어플리케이션 디자인 - GET 구현을 위한 클래스 생성"
 date: 2021-02-19 9:36:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
@@ -9,7 +9,7 @@ tags: [rest, restful, miniproject, spring, lombok]
 ---
 > 참고: <a href="https://imasoftwareengineer.tistory.com/34?category=772561">https://imasoftwareengineer.tistory.com/34?category=772561</a>
 
-이번 글에선 RESTful API의 오퍼레이션 중 GET에 집중해 서버 어플리케이션을 작성해 보겠습니다.
+이번 글에선 ~~RESTful API~~ HTTP API의 오퍼레이션 중 GET에 집중해 서버 어플리케이션을 작성해 보겠습니다.
 
 *****
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Project] TO-DO List 만들기(3) - POST"
-subtitle: "[RESTful API] 데이터를 생성하는 POST 생성! & Spring과 mongoDB"
+subtitle: "서버 어플리케이션 디자인 - POST 구현을 위한 클래스 생성 & Spring과 mongoDB"
 date: 2021-03-02 04:00:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
@@ -9,7 +9,7 @@ tags: [rest, restful, miniproject, spring, mongodb]
 ---
 > 참고: <a href="https://imasoftwareengineer.tistory.com/37?category=772561">https://imasoftwareengineer.tistory.com/37?category=772561</a>
 
-이번 글에선 RESTful API의 오퍼레이션 중 POST에 집중해 서버 어플리케이션을 작성해 보겠습니다.
+이번 글에선 ~~RESTful API~~ HTTP API의 오퍼레이션 중 POST에 집중해 서버 어플리케이션을 작성해 보겠습니다.
 
 mongoDB를 이용할 것입니다.
 

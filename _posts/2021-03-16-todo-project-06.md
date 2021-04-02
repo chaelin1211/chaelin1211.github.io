@@ -11,11 +11,11 @@ tags: [miniproject, spring, docker, reactjs, nodejs]
 > <a href="https://imasoftwareengineer.tistory.com/41?category=772561">https://imasoftwareengineer.tistory.com/41?category=772561</a>   
 > <a href="https://github.com/schmidtp0740/react-todolist">https://github.com/schmidtp0740/react-todolist</a>
 
-이번엔 저번에 만들었던 프론트 엔드 웹 서버에서 RESTful API 서버로 API 콜을 해보겠습니다.
+이번엔 저번에 만들었던 프론트 엔드 웹 서버에서 ~~RESTful API~~ HTTP API 서버로 API 콜을 해보겠습니다.
 
 *****
 
-오늘의 목표: RESTful API와 React API 연동 후 확인하기
+오늘의 목표: ~~RESTful API~~ HTTP API와 React API 연동 후 확인하기
 
 *****
 

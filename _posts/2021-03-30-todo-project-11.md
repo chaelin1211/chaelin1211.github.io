@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Project][React] TO-DO List 만들기(11) - UPDATE(2)"
-subtitle: "React로 기능 추가하기 - UDPATE"
+subtitle: "React로 기능 추가하기 - UDPATE(2)"
 date: 2021-03-30 22:37:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study

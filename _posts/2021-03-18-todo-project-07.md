@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Project] TO-DO List 만들기(7) - UPDATE, DELETE"
-subtitle: "기능 추가하기 (UPDATE, DELETE)"
+subtitle: "서버 어플리케이션 디자인 - 기능 추가하기 (UPDATE, DELETE)"
 date: 2021-03-18 23:51:00 +0900
 background: '/img/posts/rest-02.jpg'
 category: Study
