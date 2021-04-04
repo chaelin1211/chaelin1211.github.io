@@ -48,7 +48,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/03/28/singleton.html">싱글톤(Singleton)</a>
     - 전역 변수를 사용하지 않고 객체를 하나만 생성하도록 하며, 생성된 객체를 어디에서든 참조할 수 있도록 하는 패턴
 
-* 빌더(Builder)
+* <a href="https://chaelin1211.github.io/study/2021/04/04/builder-pattern.html">빌더(Builder)</a>
     - 복합 객체의 생성 과정과 표현 방법을 분리하여 동일한 생성 절차에서 서로 다른 표현 결과를 만들 수 있게 하는 패턴
 
 * 프로토타입(Prototype)
