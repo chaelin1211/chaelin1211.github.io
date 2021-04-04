@@ -81,6 +81,9 @@ public class memo{
     private String content;
 }
 ```
+* Getter, Setter, ToString
+* NoArgsConstructor: 매개변수가 없는 생성자 생성
+* AllArgsConstructor: 모든 멤버필드를 매개변수로 받는 생성자 생성
 
 ###### 다섯 개의 어노테이션은 다음처럼 @Data로 대체 가능합니다.
 ```
