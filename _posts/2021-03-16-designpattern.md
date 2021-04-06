@@ -51,7 +51,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/04/04/builder-pattern.html">빌더(Builder)</a>
     - 복합 객체의 생성 과정과 표현 방법을 분리하여 동일한 생성 절차에서 서로 다른 표현 결과를 만들 수 있게 하는 패턴
 
-* 프로토타입(Prototype)
+* <a href="https://chaelin1211.github.io/study/2021/04/05/prototype.html">프로토타입(Prototype)</a>
     - 원형이 되는 인스턴스로 새로운 인스턴스를 만드는 방식으로, 객체에 의해 생성될 객체의 타입이 결정되는 생성 디자인 패턴
 
 ### 구조(Structural) 패턴
