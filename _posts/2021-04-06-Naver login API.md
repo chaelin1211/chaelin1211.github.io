@@ -3,7 +3,7 @@ layout: post
 title: "[Open API] 네이버 아이디로 로그인"
 subtitle: "네이버 로그인 API 활용하기"
 date: 2021-04-06 23:54:00 +0900
-background: '/img/posts/design-pattern.jpg'
+background: '/img/posts/naver-01.jpg'
 category: Study
 tags: [opensource, openapi]
 ---
