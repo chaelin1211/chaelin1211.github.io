@@ -138,14 +138,22 @@ naver_id_login.init_naver_id_login();
     - BANNER_BIG_TYPE = 3;
 * 세 번째: 버튼 높이
 
-전 녹색의 긴 버튼(배너형)을 사용하고 싶어서 다음처럼 바꿨습니다.
+전 녹색의 긴 버튼(배너형)을 사용하고 싶어서 다음처럼 바꿨습니다. 작은 사이즈의 흰 버튼이 다음처럼 바꼈습니다.
 
 ```
 naver_id_login.setButton("green", 3, 40);
 ```
 
-작은 사이즈의 흰 버튼이 다음처럼 바꼈습니다.
+<img class="img-fluid" src="/img/posts/inPost/naver-opensource-12.png">
 
+하나씩 보여드릴게요.
+#### BUTTON_TYPE = 1;
+<img class="img-fluid" src="/img/posts/inPost/naver-opensource-13.png">
+
+#### BANNER_SMALL_TYPE = 2;
+<img class="img-fluid" src="/img/posts/inPost/naver-opensource-14.png">
+
+#### BANNER_BIG_TYPE = 3;
 <img class="img-fluid" src="/img/posts/inPost/naver-opensource-12.png">
 
 ### 끝
