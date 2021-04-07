@@ -116,6 +116,38 @@ naverLogin.html, callback.html 두 개 다 수정해야 합니다.
 
 다른 아이콘을 써도 되지만 네이버에서 권장하는 공식 디자인 특히 녹색을 권장하니 그것을 사용하도록 합시다.
 
+## 4. 다운 없이 아이콘 바꾸기
+#### naverLogin.html
+```
+var naver_id_login = new naver_id_login("CLIENT_ID", "CALLBACK_URL");
+var state = naver_id_login.getUniqState();
+naver_id_login.setButton("white", 2, 40);
+naver_id_login.setDomain("SERVICE_URL");
+naver_id_login.setState(state);
+naver_id_login.setPopup();
+naver_id_login.init_naver_id_login();
+```
+여기서 setButton 부분을 보면 "white"라는 부분이 있는데 버튼의 설정을 위한 파라미터 같길래 ```<head>``` 부분의 <a href="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js">https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js</a> 문서를 확인해 보기로 했습니다.
+
+여기서 setButton을 찾으면 다음과 같은 파라미터를 확인할 수 있습니다.
+
+* 첫 번째: 버튼 색
+* 두 번째: 버튼 타입 
+    - BUTTON_TYPE = 1;
+    - BANNER_SMALL_TYPE = 2;
+    - BANNER_BIG_TYPE = 3;
+* 세 번째: 버튼 높이
+
+전 녹색의 긴 버튼(배너형)을 사용하고 싶어서 다음처럼 바꿨습니다.
+
+```
+naver_id_login.setButton("green", 3, 40);
+```
+
+작은 사이즈의 흰 버튼이 다음처럼 바꼈습니다.
+
+<img class="img-fluid" src="/img/posts/inPost/naver-opensource-12.png">
+
 ### 끝
 오픈 API를 처음 이용해 봤는데 개인 프로젝트에서 오픈 API를 최대한 활용하라는 글을 본 것이 떠올랐습니다.
 
