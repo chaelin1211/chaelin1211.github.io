@@ -33,7 +33,6 @@ spring.jpa.properties.hibernate.hbm2ddl.auto=update
 또, 찾아보니 Bean을 생성해도 오류로 인식하지 못하는 경우가 있다고하니 Bean을 확인해 보세요.
 
 ### 끝
-배움엔 끝이 없네요...
 
 감사합니다.
 
