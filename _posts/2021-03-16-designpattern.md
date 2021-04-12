@@ -55,7 +55,7 @@ tags: [designpattern]
     - 원형이 되는 인스턴스로 새로운 인스턴스를 만드는 방식으로, 객체에 의해 생성될 객체의 타입이 결정되는 생성 디자인 패턴
 
 ### 구조(Structural) 패턴
-* 어댑터(Adapter)
+* <a href="https://chaelin1211.github.io/study/2021/04/11/Adapter.html">어댑터(Adapter)</a>
     - 한 클래스의 인터페이스를 클라이언트에서 사용하고자 하는 다른 인터페이스로 변환시키는 패턴
 
 * 브리지(Bridge)
