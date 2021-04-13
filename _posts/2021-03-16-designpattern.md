@@ -58,7 +58,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/04/11/Adapter.html">어댑터(Adapter)</a>
     - 한 클래스의 인터페이스를 클라이언트에서 사용하고자 하는 다른 인터페이스로 변환시키는 패턴
 
-* 브리지(Bridge)
+* <a href="https://chaelin1211.github.io/study/2021/04/13/bridge.html">브리지(Bridge)</a>
     - 구현부에서 추상층을 분리하여 각자 독립적으로 변형이 가능하고 확장이 가능하도록 하는 패턴
     - 즉 기능과 구현에 대해 두 개를 별도의 클래스로 구현
 
