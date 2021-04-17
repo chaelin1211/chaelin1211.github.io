@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Thymeleaf] ajax를 이용해 비동기식 화면 수정"
-# subtitle: "[디자인 패턴][구조 패턴] 컴퍼지트"
+subtitle: "Spring + Thymeleaf + Ajax"
 date: 2021-04-15 06:20:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
