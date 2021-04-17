@@ -3,7 +3,7 @@ layout: post
 title: "[Thymeleaf] ajax를 이용해 비동기식 화면 수정"
 subtitle: "Spring + Thymeleaf + Ajax"
 date: 2021-04-15 06:20:00 +0900
-background: '/img/posts/design-pattern.jpg'
+background: '/img/posts/mail-01.jpg'
 category: Study
 tags: [Thymeleaf, ajax, spring]
 ---
