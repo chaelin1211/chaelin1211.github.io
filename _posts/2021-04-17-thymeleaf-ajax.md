@@ -5,7 +5,7 @@ subtitle: "Spring + Thymeleaf + Ajax"
 date: 2021-04-15 06:20:00 +0900
 background: '/img/posts/mail-01.jpg'
 category: Study
-tags: [Thymeleaf, ajax, spring]
+tags: [thymeleaf, ajax, spring]
 ---
 ### Ajax로 비동기 화면 수정
 스프링 부트 프로젝트가 전체 동기식이라 부분 부분 비동기식으로 고치는 중이었습니다.
