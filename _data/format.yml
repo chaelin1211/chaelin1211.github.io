@@ -19,3 +19,5 @@ designpattern: Design Pattern
 opensource: OpenSource
 openapi: Open API
 hibernate: Hibernate
+thymeleaf: Thymeleaf
+ajax: Ajax
