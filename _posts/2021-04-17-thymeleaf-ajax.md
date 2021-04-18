@@ -75,7 +75,7 @@ Asynchronos Javascript And XML의 약자로 비동기식으로 서버와 통신�
 ```
 var commentBean = $("#commentForm").serialize();
 ```
-위처럼 form의 id를 이용해 serialize할 수도 있고, 혹은 매개변수로 form 자체를 보내서 serialize할 수도 있습니다.
+위처럼 form의 id를 이용해 serialize할 수 있습니다.
 
 각각 input에 name를 제대로 지정해야 오류 없이 수행할 수 있습니다.
 
