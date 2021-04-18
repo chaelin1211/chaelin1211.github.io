@@ -69,6 +69,30 @@ Asynchronos Javascript And XML의 약자로 비동기식으로 서버와 통신�
 
 <img class="img-fluid" src="/img/posts/inPost/ajax-01.gif">
 
+### 추가) form value 받아오기
+위에선 각각 id로 받아왔는데 serialize로 받아올 수도 있습니다.
+
+```
+var commentBean = $("#commentForm").serialize();
+```
+위처럼 form의 id를 이용해 serialize할 수도 있고, 혹은 매개변수로 form 자체를 보내서 serialize할 수도 있습니다.
+
+각각 input에 name를 제대로 지정해야 오류 없이 수행할 수 있습니다.
+
+```
+<input type="hidden" name="EMAIL" th:value="${userInform.userEmail}">
+<input type="hidden" name="POST_NUM" th:value="${resultMap.POST_NUM}">
+<input type="hidden" name="CATEGORY_NAME" th:value="${resultMap.CATEGORY_NAME}">
+```
+
+위처럼 있다고 할 때, serialize하면 다음처럼 됩니다.
+
+```
+EMAIL=cofls749%40naver.com&POST_NUM=1&CATEGORY_NAME=free
+```
+
+name에 유의해주시고, controller에서도 이대로 보내지니 controller에서도 유의해서 오류 없이 진행하면 됩니다.
+
 *****
 
 > 참조
