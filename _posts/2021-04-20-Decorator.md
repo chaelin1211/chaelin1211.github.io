@@ -28,7 +28,7 @@ tags: [designpattern]
 Component와 Deocrator의 조합(Composition)을 통해 ConcreteComponent, ConcreteDecorator 사이의 참조 관계가 이루어집니다.
 
 ### 데코레이터 예시와 이해
-컴퓨터와 기타 기기를 가지고 예시를 만들었습니다.
+전자제품과 기타 기기를 가지고 예시를 만들었습니다.
 
 <img class="img-fluid" src="/img/posts/inPost/decorator-03.png">
 
