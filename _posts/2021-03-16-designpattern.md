@@ -70,7 +70,7 @@ tags: [designpattern]
     - 주어진 상황 및 용도에 따라 어떤 객체에 책임을 덧붙이는 패턴
     - 기능 확장이 필요할 때 서브클래싱 대신 쓸 수 있는 유연한 대안
 
-* 퍼사드(Facade)
+* <a href="https://chaelin1211.github.io/study/2021/04/21/Facade.html">퍼사드(Facade)</a>
     - 한 서브시스템 내의 인터페이스 집합에 대한 **획일화 된 하나의 인터페이스**를 제공하는 패턴
 
 * 플라이웨이트(Flyweight)
