@@ -73,7 +73,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/04/21/Facade.html">퍼사드(Facade)</a>
     - 한 서브시스템 내의 인터페이스 집합에 대한 **획일화 된 하나의 인터페이스**를 제공하는 패턴
 
-* 플라이웨이트(Flyweight)
+* <a href="https://chaelin1211.github.io/study/2021/04/21/Flyweight.html">플라이웨이트(Flyweight)</a>
     - 동일하거나 유사한 객체들 사이에 가능한 많은 데이터를 서로 공유하여 사용하도록 하여 메모리 사용량을 최소화 하는 패턴
 
 * 프록시(Proxy)
