@@ -3,7 +3,7 @@ layout: post
 title: "[짧은글][JavaScript] submit event 무시하기"
 subtitle: "submit해도 reload 안 되도록 하기"
 date: 2021-04-23 12:13:00 +0900
-background: '/img/posts/mail-01.jpg'
+background: '/img/posts/jekyll-02.png'
 category: Study
 tags: [javascript]
 ---
