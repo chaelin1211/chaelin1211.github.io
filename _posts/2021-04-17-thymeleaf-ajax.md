@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Thymeleaf] ajax를 이용해 비동기식 화면 수정"
-subtitle: "Spring + Thymeleaf + Ajax"
+subtitle: "Spring + Thymeleaf + Ajax - POST"
 date: 2021-04-15 06:20:00 +0900
 background: '/img/posts/mail-01.jpg'
 category: Study
@@ -10,7 +10,10 @@ tags: [thymeleaf, ajax, spring]
 ### Ajax로 비동기 화면 수정
 스프링 부트 프로젝트가 전체 동기식이라 부분 부분 비동기식으로 고치는 중이었습니다.
 
-우선 댓글 작성의 경우입니다. 댓글 작성할 때마다 화면을 reload하면 불편하고 수행 능력이 떨어지기 때문에 이 부분을 수정하고자 했습니다.
+우선 **댓글 작성**의 경우입니다. 댓글 작성할 때마다 화면을 reload하면 불편하고 수행 능력이 떨어지기 때문에 이 부분을 수정하고자 했습니다.
+
+* 댓글 작성: ajax로 POST
+* 댓글 작성 후: 새로 댓글 리스트를 controller에서 받아와 화면 수정
 
 ### Ajax란?
 Asynchronos Javascript And XML의 약자로 비동기식으로 서버와 통신하는 방식을 의미합니다.
@@ -21,7 +24,11 @@ Asynchronos Javascript And XML의 약자로 비동기식으로 서버와 통신�
 * ajax
 
 ### Spring Boot에서 Ajax로 통신하기 (Thymeleaf)
-#### view
+#### view - 댓글 작성 부분
+<script src="https://gist.github.com/chaelin1211/5fe530a4a3ff3dc53002e05e7a285718.js"></script>
+hidden의 내용과 작성된 내용을 ajax로 보내서 controller 갑니다.
+
+#### view - 댓글 출력 부분
 <script src="https://gist.github.com/chaelin1211/01443383d1fe5d9343ff327b33e75279.js"></script>
 서버에서 댓글 리스트를 받아와서 th:each로 각각을 출력하는 코드입니다.
 
