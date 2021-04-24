@@ -76,7 +76,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/04/21/Flyweight.html">플라이웨이트(Flyweight)</a>
     - 동일하거나 유사한 객체들 사이에 가능한 많은 데이터를 서로 공유하여 사용하도록 하여 메모리 사용량을 최소화 하는 패턴
 
-* 프록시(Proxy)
+* <a href="https://chaelin1211.github.io/study/2021/04/24/Proxy.html">프록시(Proxy)</a>
     - 실제 기능을 수행하는 객체 대신 가상의 객체를 사용해 로직의 흐름을 제어하는 디자인 패턴
     - 프록시 클래스는 Wrapper로서의 역할 수행
 
