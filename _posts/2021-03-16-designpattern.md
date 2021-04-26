@@ -81,7 +81,7 @@ tags: [designpattern]
     - 프록시 클래스는 Wrapper로서의 역할 수행
 
 ### 행위(Behavioral) 패턴
-* <a href="https://chaelin1211.github.io/study/2021/04/26/Chain of Resposibility.html">책임 연쇄(Chain of Resposibility)</a>
+* <a href="https://chaelin1211.github.io/study/2021/04/26/Chain-of-Resposibility.html">책임 연쇄(Chain of Resposibility)</a>
     - 클라이언트로부터의 요청을 처리할 수 있는 **처리 객체를 집합으로** 만들어 부여함으로써 **결합도를 없애기** 위한 패턴 
 
 * 커맨드(Command)
