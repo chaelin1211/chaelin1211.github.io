@@ -81,6 +81,7 @@ pear
 이렇게 구분자로 사용한 "/" 또한 하나의 토큰이 되어 출력됩니다.
 
 #### 자주 사용되는 메소드
+
 |Return|Method|Desrption|
 |---|---|---|
 |int|countTokens()|현재 남아있는 토큰 수 반환|
@@ -96,12 +97,14 @@ pear
 
 #### split의 원리
 ```public String[] split(String regex, int limit)```
+
 split은 입력 받은 정규식을 이용해 문자열을 분리해 배열을 리턴합니다. 정규식을 이용한 분리를 이용하기 때문에 속도 면에서 StringTokenizer 보다 느립니다.
 
 하지만 좀 더 구체적이고 유연한 구분이 가능합니다.
 
 #### StringTokenizer
 ```public class StringTokenizer implements Enumeration<Object>``` 
+
 StringTokenizer는 Enumeration을 구현하는 클래스로 문자열을 배열로 접근하기 보단 구분자로 구분해 입력 받을 때 사용할 때 적절합니다.
 
 구분자를 하나밖에 이용할 수 없고 비교적 정확도가 떨어집니다.
@@ -114,6 +117,7 @@ StringTokenizer는 Enumeration을 구현하는 클래스로 문자열을 배열�
 ### 3. 예제로 보는 split과 StringTokenizer 차이
 #### 1. 구분자가 한 글자 이상인 경우
 예시 문자열이 다음과 같을 때, 구분자를 "/&"으로 했습니다.
+
 ```String test = "apple/&banana/chicken&/";```
 
 ```
@@ -139,6 +143,7 @@ split은 정확히 같아야 구분자로 인식됩니다.
 
 #### 2. 구분자를 "*"할 경우
 예시 문자열이 다음과 같을 때, 구분자를 "*"으로 했습니다.
+
 ```String test = "apple/*banana/chicken*/";```
 
 ```
@@ -152,7 +157,7 @@ String[] splitArr = test.split("*");
 
 split에서 특정 문자는 단독으로 사용될 수 없습니다. 그 종류는 다음과 같습니다.
 
-".$|()[{^?*+\\" 이 문자들을 split에서 구분자로 사용하기 위해선 \\(역슬래쉬 두 번)을 앞에 붙여주어야 합니다.
+```.$|()[{^?*+\\``` 이 문자들을 split에서 구분자로 사용하기 위해선 ```\\```(역슬래쉬 두 번)을 앞에 붙여주어야 합니다.
 
 ```
 String[] splitArr = test.split("\\*");
