@@ -3,7 +3,7 @@ layout: post
 title: "[Java] StringTokenizer"
 subtitle: "Split과 StringTokenizer"
 date: 2021-04-27 19:47:00 +0900
-background: '/img/posts/design-pattern.jpg'
+background: '/img/posts/jekyll-02.png'
 category: Study
 tags: [java]
 ---
