@@ -84,7 +84,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/04/26/Chain-of-Resposibility.html">책임 연쇄(Chain of Resposibility)</a>
     - 클라이언트로부터의 요청을 처리할 수 있는 **처리 객체를 집합으로** 만들어 부여함으로써 **결합도를 없애기** 위한 패턴 
 
-* 커맨드(Command)
+* <a href="https://chaelin1211.github.io/study/2021/05/01/Command.html">커맨드(Command)</a>
     - 요청을 객체의 형태로 캡슐화하여 사용자가 보낸 요청을 나중에 이용할 수 있도록 메서드 이름, 매개변수 등 요청에 필요한 정보를 저장 또는 로깅, 취소할 수 있게하는 패턴
 
 * 인터프리터(Interpreter)
