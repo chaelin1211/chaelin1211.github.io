@@ -87,7 +87,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/05/01/Command.html">커맨드(Command)</a>
     - 요청을 객체의 형태로 캡슐화하여 사용자가 보낸 요청을 나중에 이용할 수 있도록 메서드 이름, 매개변수 등 요청에 필요한 정보를 저장 또는 로깅, 취소할 수 있게하는 패턴
 
-* <a href="https://chaelin1211.github.io/study/2021/05/02/Interpreter.html">인터프리터(Interpreter)</a>
+* <a href="https://chaelin1211.github.io/">인터프리터(Interpreter)</a>
     - **문법 규칙을 클래스화** 한 구조로, 일련의 규칙으로 정의된 문법적 언어를 해석하는 패턴
     - SQL 구문 분석, 기호 처리 엔진 등에서 사용
 
