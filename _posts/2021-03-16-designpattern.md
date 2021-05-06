@@ -94,7 +94,6 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/05/05/Iterator.html">이터레이터(Iterator)</a>
     - 내부 표현부를 노출하지 않고, 집합 객체에 속한 원소들을 순차적으로 접근할 수 있는 방법을 제공하는 패턴
 
-* 
 * <a href="https://chaelin1211.github.io/study/2021/05/06/Mediator.html">중재자(Mediator)</a>
     - 모든 클래스 간의 복잡한 로직(상호작용)을 캡슐화하여 하나의 클래스에 위임하여 처리하는 패턴
     - M:N 관계에서 M:1 관계로 복잡도를 떨어뜨려 유지 보수 및 재사용의 확장성에 유리
