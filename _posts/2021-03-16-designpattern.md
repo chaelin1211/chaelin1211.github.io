@@ -91,7 +91,7 @@ tags: [designpattern]
     - **문법 규칙을 클래스화** 한 구조로, 일련의 규칙으로 정의된 문법적 언어를 해석하는 패턴
     - SQL 구문 분석, 기호 처리 엔진 등에서 사용
 
-* 이터레이터(Iterator)
+* <a href="https://chaelin1211.github.io/study/2021/05/05/Iterator.html">이터레이터(Iterator)</a>
     - 내부 표현부를 노출하지 않고, 집합 객체에 속한 원소들을 순차적으로 접근할 수 있는 방법을 제공하는 패턴
 
 * 중재자(Mediator)
