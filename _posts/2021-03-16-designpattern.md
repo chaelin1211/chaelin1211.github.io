@@ -98,7 +98,7 @@ tags: [designpattern]
     - 모든 클래스 간의 복잡한 로직(상호작용)을 캡슐화하여 하나의 클래스에 위임하여 처리하는 패턴
     - M:N 관계에서 M:1 관계로 복잡도를 떨어뜨려 유지 보수 및 재사용의 확장성에 유리
 
-* 메멘토(Memento)
+* <a href="https://chaelin1211.github.io/study/2021/05/07/Memento.html"> 메멘토(Memento)</a>
     - 객체의 **상태 정보를 저장**하고 사용자의 필요에 의하여 **원하는 시점의 데이터를 복원**할 수 있는 패턴
 
 * 옵저버(Observer)
