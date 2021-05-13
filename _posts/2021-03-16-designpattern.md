@@ -101,7 +101,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/05/07/Memento.html"> 메멘토(Memento)</a>
     - 객체의 **상태 정보를 저장**하고 사용자의 필요에 의하여 **원하는 시점의 데이터를 복원**할 수 있는 패턴
 
-* <a href="https://chaelin1211.github.io/study/2021/05/14/observer.html">옵저버(Observer)</a>
+* <a href="https://chaelin1211.github.io/study/2021/05/13/observer.html">옵저버(Observer)</a>
     - 객체의 상태가 변할 때 그와 연관된 객체들에게 알림을 보내는 패턴
     - 한 객체의 상태 변화에 따라 다른 객체의 상태도 연동되도록 1:N 객체 의존 관계를 구성하는 패턴
 
