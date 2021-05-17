@@ -38,7 +38,8 @@ tags: [java, spring]
     * 스프링은 객체를 담고 있는 컨테이너로써 자바 객체의 생성과 소멸 같은 라이프 사이클을 관리하고, 언제든 필요한 객체를 가져다 사용할 수 있도록 해줍니다.
 * POJO (Plain Old Java Object) 방식의 프레임워크
     * POJO란 객체지향적인 원리에 충실하면서 환경과 기술에 종속되지 않고 필요에 따라 재활용될 수 있는 방식으로 설계된 오브젝트를 말합니다.
-    * 스프링 프레임워크는 어딘가에 종속되어 결합도를 높이는 형식을 배제하기 위해 만들어진 POJO 기반의 프레임워크입니다.
+    * 스프링 프레임워크는 어딘가에 종속되어 결합도를 높이는 형식을 배제하기 위해 만들어진 POJO 기반의 프레임워크입니다. 즉 특정 라이브러리나 컨테이너 기술에 종속적이지 않다는 것입니다.
+    * 일반적인 Java 코드를 이용하여 객체를 구성하는 방식 그대로 스프링에서 사용가능하기 때문에 가장 일반적인 형태로 코드를 작성하고 실행할 수 있기 때문에 높은 생산성과 유연한 테스트를 할 수 있단 장점을 갖게 됩니다.
 * IoC (Inversion of Control): 제어 반전
     * 제어권이 사용자가 아니라 프레임워크에 있어서 필요에 따라 스프링에서 사용자의 코드를 호출합니다.
     * 따라서 스프링에서는 사용자가 아닌 컨테이너에서 객체를 생성하고, 소멸하고, 제어합니다. 
@@ -98,6 +99,7 @@ tags: [java, spring]
 * <a href="https://ssad.tistory.com/51">https://ssad.tistory.com/51</a>
 * <a href="https://m.blog.naver.com/PostView.nhn?blogId=m1nsuk&logNo=221572976740&proxyReferer=https:%2F%2Fwww.google.com%2F">https://m.blog.naver.com/PostView.nhn?blogId=m1nsuk&logNo=221572976740&proxyReferer=https:%2F%2Fwww.google.com%2F</a>   
 * <a href="https://hamait.tistory.com/315">https://hamait.tistory.com/315</a>
+* <a href="https://freestrokes.tistory.com/79">https://freestrokes.tistory.com/79</a>
 
 감사합니다.
 
