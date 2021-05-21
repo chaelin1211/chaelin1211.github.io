@@ -109,11 +109,11 @@ tags: [designpattern]
     - 객체의 특정 상태를 클래스로 선언하고, 클래스에서는 해당 상태에서 할 수 있는 행위들을 메서드로 정의하는 패턴 
     - 객체 내부의 상태에 따라 동작을 변경해야할 때 사용
 
-* 전략(Strategy)
+* <a href="https://chaelin1211.github.io/study/2021/05/19/Strategy.html">전략(Strategy)</a>
     - 객체들이 할 수 있는 행위 각각에 대해 전략 클래스를 생성하는 패턴
     - 동적으로 행위의 수정이 필요한 경우 전략을 바꾸는 것만으로 행위의 수정이 가능
 
-* 템플릿 메서드(Template Method)
+* <a href="https://chaelin1211.github.io/study/2021/05/21/Template-method.html">템플릿 메서드(Template Method)</a>
     - 어떤 작업을 처리하는 **일부분을 서브 클래스로 캡슐화**해 전체 일을 수행하는 구조는 바꾸지 않으면서 특정 단계에서 수행하는 내역을 바꾸는 패턴
 
 * 방문자(Visitor)
