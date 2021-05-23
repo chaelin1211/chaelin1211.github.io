@@ -116,7 +116,7 @@ tags: [designpattern]
 * <a href="https://chaelin1211.github.io/study/2021/05/21/Template-method.html">템플릿 메서드(Template Method)</a>
     - 어떤 작업을 처리하는 **일부분을 서브 클래스로 캡슐화**해 전체 일을 수행하는 구조는 바꾸지 않으면서 특정 단계에서 수행하는 내역을 바꾸는 패턴
 
-* 방문자(Visitor)
+* <a href="https://chaelin1211.github.io/study/2021/05/23/Visitor.html">방문자(Visitor)</a>
     - 실제 로직을 가지고 있는 객체(Visitor)가 로직을 적용할 객체를 방문하면서 실행하는 패턴
     - 로직과 구조를 분리하는 패턴, 구조를 수정하지 않고도 새로운 동작을 기존 객체에 추가 가능
 
