@@ -5,7 +5,7 @@ subtitle: "Spring의 개념과 Annotation"
 date: 2021-04-29 15:20:00 +0900
 background: '/img/posts/jekyll-02.png'
 category: Study
-tags: [java, spring]
+tags: [java, spring, interview]
 ---
 ### Framework
 소프트웨어 개발에 있어 하나의 뼈대 역할을 합니다.
