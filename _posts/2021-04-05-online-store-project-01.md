@@ -2,7 +2,7 @@
 layout: post
 title: "[Project] 온라인 쇼핑몰 프로젝트 기획"
 subtitle: "개인 프로젝트 - 웹 개발 프로젝트 기획"
-date: 2021-04-05 23:34:00 +0900
+# date: 2021-04-05 23:34:00 +0900
 background: '/img/posts/supermaket-01.jpg'
 category: Study
 tags: [miniproject]
