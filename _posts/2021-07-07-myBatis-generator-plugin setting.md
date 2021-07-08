@@ -63,11 +63,9 @@ myBatis generator plugin을 다음과 같이 추가합니다.
 
 이 부분을 추가한 후에 maven에 이 플러그인이 추가되었는지 확인합니다.
 
-* mybatis-generator
-    * mybatis-generator:generate
-    * mybatis-generator:help
+<img class="img-fluid" src="/img/posts/inPost/mybatis-generator-01.png">
 
-위와 같은 내용이 추가되어야 실행 가능합니다. (이미지는 추후에 첨부하도록 하겠습니다.)
+위와 같은 내용이 추가되어야 실행 가능합니다.
 
 ### generatorConfig.xml 파일 생성
 resources 디렉토리 아래에 generatorConfig.xml을 생성하여 다음 내용을 입력합니다.
