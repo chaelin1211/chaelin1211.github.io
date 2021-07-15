@@ -26,3 +26,5 @@ java: Java
 network: Network
 interview: 실무면접
 os: OS
+library: Library
+swagger: Swagger
