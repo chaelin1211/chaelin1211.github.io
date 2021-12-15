@@ -5,7 +5,7 @@ subtitle: "하루에 공부한 것 / 알게된 것 간단 정리"
 date: 2021-12-15 16:51:00 +0900
 background: '/img/posts/plugin.jpg'
 category: Study
-tags: []
+tags: [til]
 ---
 
 ### 2021.12.15
