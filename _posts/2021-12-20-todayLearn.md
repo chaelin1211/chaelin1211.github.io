@@ -2,7 +2,7 @@
 layout: post
 title: "[2021] 일일기록 (2021.12.15~)"
 subtitle: "하루에 공부한 것 / 알게된 것 간단 정리"
-date: 2021-12-15 16:51:00 +0900
+date: 2021-12-20 15:06:00 +0900
 background: '/img/posts/til.jpg'
 category: Study
 tags: [til]
@@ -24,3 +24,35 @@ tags: [til]
     
   
 *****
+
+### 2021.12.20
+* org.springframework.util.StringUtils.isEmpty
+
+  JAVA의 String, StringBuilder class에서 제공되어야 할 몇 기능을 제공하고, 구분된 문자열 간의 비교 기능도 제공 (ex. csv)
+
+  * isEmpty()   
+    문자열이 빈 문자열이거나 null인 경우 true -> "" or null
+
+    ``` java
+
+    StringUtils.isEmpty(null) = true
+    StringUtils.isEmpty("") = true
+    StringUtils.isEmpty(" ") = false
+    StringUtils.isEmpty("Hello") = false
+
+    ```
+
+  * hasLength()   
+    isEmpty()와 반대 -> !isEmpty()
+
+    ``` java
+
+    StringUtils.hasLength(null) = false
+    StringUtils.hasLength("") = false
+    StringUtils.hasLength(" ") = true
+    StringUtils.hasLength("Hello") = true
+
+    ```
+
+  **참고 사이트**   
+  <a href= "https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/StringUtils.html#isEmpty-java.lang.Object-">https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/StringUtils.html#isEmpty-java.lang.Object-</a>
