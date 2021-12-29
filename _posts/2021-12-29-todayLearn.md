@@ -100,9 +100,9 @@ tags: [til]
     
     * 해결 방법
     
-    ```
-    > bundle add webrik
-    ```
+      ```
+      > bundle add webrik
+      ```
     
   **참고 사이트**   
   * <a href= "https://junho85.pe.kr/1850">https://junho85.pe.kr/1850</a>
