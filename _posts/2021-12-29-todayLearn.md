@@ -2,7 +2,7 @@
 layout: post
 title: "[2021] 일일기록 (2021.12.15~)"
 subtitle: "하루에 공부한 것 / 알게된 것 간단 정리"
-date: 2021-12-20 15:06:00 +0900
+date: 2021-12-29 14:24:00 +0900
 background: '/img/posts/til.jpg'
 category: Study
 tags: [til]
@@ -16,7 +16,8 @@ tags: [til]
 
 <a href="#id211215">2021.12.15</a>   
 <a href="#id211220">2021.12.20</a>   
-<a href="#id211222">2021.12.22</a> 
+<a href="#id211222">2021.12.22</a>
+<a href="#id211229">2021.12.29</a> 
 
 *****
 
@@ -78,4 +79,33 @@ tags: [til]
   기본 강의를 듣지 않고 활용 강의를 들어서 보충이 필요한 부분 공부 & 강의 수강
   
   * 도서[자바 ORM 표준 JPA 프로그래밍] - 5장 연관관계와 매핑 기초
+  
   * 강의 [실전! 스프링부트와 JPA 활용] - 도메인 모델과 테이블 설계
+*****
+
+<h3 id="id211229">2021.12.29</h3>
+
+* Jekyll 실행 오류
+  <a href="https://chaelin1211.github.io/study/2021/02/11/jekyll-and-ruby.html">2. Jekyll & Ruby 적용 (윈도우)</a>에서 최신 버전으로 Ruby를 다운했더니 오류 발생
+  * 오류 1번: Could not find gem 'jekyll-paginate (~> 1.1.0)' in locally installed gems. (Bundler::GemNotFound)   
+    * 해결 방법: Run `bundle install` to install missing gems.
+    
+      ```
+      > bundle install
+      ```
+      
+  * 오류 2번: cannot load such file -- webrick (LoadError)
+    
+    기존 ruby 버전에서 포함되었던 gem이 제외됐기 때문!
+    
+    * 해결 방법
+    
+    ```
+    > bundle add webrik
+    ```
+    
+  **참고 사이트**   
+  * <a href= "https://junho85.pe.kr/1850">https://junho85.pe.kr/1850</a>
+  * <a href= "https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=flowerdances&logNo=221110593847">https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=flowerdances&logNo=221110593847</a>
+
+*****
