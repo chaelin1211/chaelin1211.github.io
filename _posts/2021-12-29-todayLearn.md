@@ -102,7 +102,7 @@ tags: [til]
     * 해결 방법
     
       ```
-      > bundle add webrik
+      > bundle add webrick
       ```
     
   **참고 사이트**   
