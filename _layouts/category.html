@@ -6,6 +6,8 @@ layout: page
 {% include tag.html %}
 
 {% assign category = page.category | default: page.title %}
+
+{% if category != 'T∙I∙L' %}
 {% for post in site.categories[category] %}
 <div class="post-wrapper" {% if post.tags %} {% for tag in post.tags %} data-{{ tag }} {% endfor %} {% endif %}>
   <article class="post-preview">
@@ -37,6 +39,19 @@ layout: page
   <hr>
 </div>
 {% endfor %}
+{% elsif category == 'T∙I∙L' %}
+ 
+{% include dateTag.html %}
+
+{% for post in site.categories[category] %}
+<div class="post-wrapper" {% if post.tags %} {% for tag in post.tags %} data-{{ tag }} {% endfor %} {% endif %} data-{{ post.date | date: '%Y%m' }}>
+  <a href="{{ post.url | prepend: site.category | replace: '//', '/' }}">
+    <span style="background-color: lightgray; padding: 0 5px 0 5px;"> {{ post.date | date: '%Y.%m.%d' }}</span> {{ post.title }}
+  </a>
+</div>
+{% endfor %}
+
+{% endif %}
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}

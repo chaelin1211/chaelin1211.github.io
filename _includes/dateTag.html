@@ -1,0 +1,21 @@
+<div>
+    <span style="font-style: italic;">Date</span>
+
+    {% assign times = site.categories[category] | map: 'date' %}
+    {% assign timeTag = '' %}
+    {% for time in times %}
+    {% assign tmpTime = time | date: '%Y.%m' | append: ',' %}
+    {% assign timeTag = timeTag | append: tmpTime %}
+    {% endfor%}
+
+    {% assign timeTagTable = timeTag | split: ',' %}
+    {% assign timeTagTable = timeTagTable | uniq | join: "," %}
+    {% assign timeTagTable = timeTagTable | split: ',' | reverse %}
+
+    {% for time in timeTagTable %}
+    <span class="tag" data-tag="{{time | remove: '.' }}">{{ time }}</span>
+    {% endfor%}
+
+    <span class="tag selected px-3" data-tag="">ALL</span>
+</div>
+<hr>
