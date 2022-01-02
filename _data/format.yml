@@ -30,3 +30,5 @@ library: Library
 swagger: Swagger
 authentication: 인증
 til: TIL
+mybatis: myBatis
+ruby: Ruby
