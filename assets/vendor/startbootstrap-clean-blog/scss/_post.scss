@@ -71,21 +71,8 @@
     color:$gray-600;
   }
   ol{
-    background-color: $gray-200;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    * p{
-      margin: 0px;
-    }
-    > li{
-      padding-top: 10px;
-    }
-  }
-  ul{
-    > li {
-      margin-bottom : 5px;
-    }
-    margin-bottom : 15px;
+    background-color: $gray-100;
+    padding: 0 10px 0 30px;
   }
   a{
     text-decoration: underline;
