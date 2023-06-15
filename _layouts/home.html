@@ -35,7 +35,11 @@ layout: default
         <article class="post-preview">
           
           <a class="post-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title"> {{ post.title }}
+            <h2 class="post-title">
+              {% assign page = post %}
+              {% include icon.html %}
+
+              {{ post.title }}
               {% if post.result %}
                 {% assign result = post.result %}
                 {% include badge.html %}
