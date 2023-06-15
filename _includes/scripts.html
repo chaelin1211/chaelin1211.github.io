@@ -1,14 +1,17 @@
-<script src="{{"/assets/vendor/jquery/jquery.min.js" | relative_url }}"></script>
-<script src="{{"/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relative_url }}"></script>
-<script src="{{"/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js" | relative_url }}"></script>
-<script src="{{"/assets/scripts.js" | relative_url }}"></script>
+<script src="{{'/assets/vendor/jquery/jquery.min.js' | relative_url }}"></script>
+<script src="{{'/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script src="{{'/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js' | relative_url }}"></script>
+<script src="{{'/assets/scripts.js' | relative_url }}"></script>
 
 <script>
   // 태그를 위한 부분
-  $("[data-tag]").click((e) => {
-    currentTag = e.target.dataset.tag;
-    filterByTagName(currentTag);
+  $(function () {
+    $("[data-tag]").click((e) => {
+      currentTag = e.target.dataset.tag;
+      filterByTagName(currentTag);
+    })
   })
+
   function filterByTagName(tagName) {
     $('.d-none').removeClass('d-none');
     if(tagName != ""){
@@ -33,7 +36,7 @@
 
   function getParam(sname) {
     // 출처: https://electronic-moongchi.tistory.com/82
-    var params = location.search.substr(location.search.indexOf("?") + 1);
+    var params = location.search.substring(location.search.indexOf("?") + 1);
     var sval = "";
     params = params.split("&");
     for (var i = 0; i < params.length; i++) {
@@ -50,7 +53,7 @@
 </script>
 {% if page.url contains 'contact' %}
   <!-- Form Validation -->
-  <script src="{{"/assets/vendor/startbootstrap-clean-blog/js/jqBootstrapValidation.js" | relative_url }}"></script>
+  <script src="{{assets/vendor/startbootstrap-clean-blog/js/jqBootstrapValidation.js" | relative_url }}"></script>
   <!-- Send Form -->
   <script>
     $(function () {
