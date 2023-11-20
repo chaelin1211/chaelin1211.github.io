@@ -4,8 +4,8 @@ title: "서버 시간 동기화"
 subtitle: "서버 시간과 토큰 발급 서버의 시간이 맞지 않아 오류가 발생할 경우"
 date: 2023-11-20 17:56:00 +0900
 background: '/img/posts/pattern01.jpg'
-category: Study
-tags: [til]
+category: T∙I∙L
+tags: [server]
 ---
 
 서버에서 웹을 띄워 실행 시키는데 토큰 검증 과정 중 오류가 발생했습니다. 
