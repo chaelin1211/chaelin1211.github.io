@@ -1,6 +1,6 @@
 import express, {Request, Response} from "express";
-import {NotionPostResult, PostSimple, notionPostResultParse} from "./notionResult";
-import {NotionPostAndFilter} from "./notionFilter";
+import {NotionPostResult, PostSimple, NotionPropertiesResult, NotionDatabaseProperty, notionPostResultParse, notionPropsResultParse} from "./notion-result";
+import {NotionPostAndFilter} from "./notion-filter";
 
 require("dotenv").config();
 const {Client} = require("@notionhq/client");
@@ -42,8 +42,20 @@ app.get("/post-list", async (req: Request, res: Response) => {
         return notionPostResultParse(v.properties, v.url);
     })
 
-    console.log(postList);
     res.json(postList);
+});
+
+app.get("/properties", async (req: Request, res: Response) => {
+    // Avoid CORS errors
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Content-Type", "application/json");
+
+    const originProperties: NotionPropertiesResult = await notion.databases.retrieve({
+        database_id: process.env.NOTION_DATABASE_ID
+    });
+    const properties: NotionDatabaseProperty = notionPropsResultParse(originProperties);
+
+    res.json(properties);
 });
 
 app.listen(PORT, () => {

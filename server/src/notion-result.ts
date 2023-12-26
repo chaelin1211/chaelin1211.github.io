@@ -13,30 +13,46 @@ export interface OriginPropsType {
         type: string,
         date: { start: string, end: string, time_zone: string }
     },
-    tags: { id: string, type: string, multi_select: [{ id: string, name: string }] },
+    tags: DefaultMultiSelectInfo,
+    project: DefaultMultiSelectInfo,
     'sub-title': { id: string, type: string, rich_text: [{ plain_text: string }] },
-    category: { id: string, type: string, rich_text: [{ plain_text: string }] },
+    category: DefaultMultiSelectInfo,
     title: { id: string, type: string, title: [{ plain_text: string }] }
 }
 
-interface PostSimple {
+interface DefaultMultiSelectInfo {
+    id: string,
+    type: string,
+    multi_select: CommonMultiSelect[]
+}
+
+
+export interface PostSimple {
     date: { start: string, end: string, time_zone: string },
-    tags: [{ id: string, name: string }],
+    tags: CommonMultiSelect[],
     'sub-title': string,
     category: string,
     title: string,
     url: string
 }
 
-const notionPostResultParse = (postOrigin: OriginPropsType, url: string): PostSimple => {
-    return {
-        date: getValueByType(postOrigin.date),
-        tags: getValueByType(postOrigin.tags),
-        category: getValueByType(postOrigin.category),
-        'sub-title': getValueByType(postOrigin['sub-title']),
-        title: getValueByType(postOrigin.title),
-        url: url
-    };
+export interface NotionPropertiesResult {
+    properties: {
+        tags: { "multi_select": { "options": CommonMultiSelect[] } },
+        project: { "multi_select": { "options": CommonMultiSelect[] } },
+        category: { "multi_select": { "options": CommonMultiSelect[] } }
+    }
+}
+
+export interface NotionDatabaseProperty {
+    tags: CommonMultiSelect[],
+    project: CommonMultiSelect[],
+    category: CommonMultiSelect[]
+}
+
+interface CommonMultiSelect {
+    id: string,
+    name: string
 }
 
 const getValueByType = (result: any) => {
@@ -54,4 +70,24 @@ const getValueByType = (result: any) => {
     }
 }
 
-export {NotionPostResult, PostSimple, OriginPropsType, notionPostResultParse};
+export const notionPostResultParse = (postOrigin: OriginPropsType, url: string): PostSimple => {
+    return {
+        date: getValueByType(postOrigin.date),
+        tags: getValueByType(postOrigin.tags),
+        category: getValueByType(postOrigin.category),
+        'sub-title': getValueByType(postOrigin['sub-title']),
+        title: getValueByType(postOrigin.title),
+        url: url
+    };
+}
+
+
+export const notionPropsResultParse = (propsOrigin: NotionPropertiesResult): NotionDatabaseProperty => {
+    const { tags, category, project } = propsOrigin.properties;
+
+    return {
+        tags: tags.multi_select.options,
+        category: category.multi_select.options,
+        project: project.multi_select.options
+    };
+}
