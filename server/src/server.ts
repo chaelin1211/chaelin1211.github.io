@@ -24,8 +24,8 @@ app.get("/post-list", async (req: Request, res: Response) => {
     res.setHeader("Content-Type", "application/json");
 
     const notionAddFilter = new NotionPostAndFilter();
-    if (!category) {
-        notionAddFilter.addFilter("category", category);
+    if (category !== "") {
+        notionAddFilter.addFilter("category", category)
     }
     if (tags.length > 0) {
         tags.map((v: string) => {
