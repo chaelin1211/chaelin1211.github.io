@@ -20,8 +20,8 @@ app.get("/post-list", async (req: Request, res: Response) => {
         : [req.query.tags as string | undefined || ""];
 
     // Avoid CORS errors
-    // res.setHeader("Access-Control-Allow-Origin", "*");
-    // res.setHeader("Content-Type", "application/json");
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Content-Type", "application/json");
 
     const notionAddFilter = new NotionPostAndFilter();
     if (!category) {
