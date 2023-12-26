@@ -1,18 +1,17 @@
 /* app /[category] */
+import {getPostList, getProperties} from "../(notion)/notion-service";
+
 export const dynamicParams = false; // Dynamic segments not included in generateStaticParams will return a 404.
 
 export async function generateStaticParams() {
-    const props = await fetch("http://localhost:8000/properties").then((res) => res.json())
+    const props = await getProperties();
 
     // [{category: ""}, {category: ""}]
     return props.category.map((v: { name: string }) => ({category: v.name}))
 }
 
 const postList = async (category: string) => {
-    const url = new URL("http://localhost:8000/post-list");
-    url.searchParams.append("category", category)
-
-    return await fetch(url.toString()).then((res) => res.json())
+    return await getPostList(category);
 }
 
 export default async function Page(params: { params: { category: string } }) {
