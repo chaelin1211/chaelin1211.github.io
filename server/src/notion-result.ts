@@ -1,4 +1,4 @@
-interface NotionPostResult {
+export interface NotionPostResult {
     results: [
         {
             properties: OriginPropsType,
@@ -7,7 +7,7 @@ interface NotionPostResult {
     ]
 }
 
-interface OriginPropsType {
+export interface OriginPropsType {
     date: {
         id: string,
         type: string,
