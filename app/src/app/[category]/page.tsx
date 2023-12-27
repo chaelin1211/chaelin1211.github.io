@@ -1,5 +1,5 @@
 /* app /[category] */
-import {getProperties} from "../(notion)/notion-service";
+import {getProperties} from "@/src/app/notion/notion-service";
 import PostList from './post-list';
 
 export const dynamicParams = false; // Dynamic segments not included in generateStaticParams will return a 404.

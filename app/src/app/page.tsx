@@ -1,4 +1,4 @@
-import {getProperties} from "@/src/app/(notion)/notion-service";
+import {getProperties} from "@/src/app/notion/notion-service";
 
 export default async function Home() {
     const property = await getProperties();
