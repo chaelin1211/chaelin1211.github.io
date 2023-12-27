@@ -1,0 +1,28 @@
+import {NotionDatabaseProperty, PostSimple} from "./notion-result";
+import comFetch from "@/src/app/api/comFetch";
+
+require("dotenv").config();
+const {Client} = require("@notionhq/client");
+
+// Initializing a client
+const notion = new Client({
+    auth: process.env.NOTION_SECRET,
+})
+
+export async function getPostList(category: string = "", tags: string[] = []): Promise<PostSimple[]> {
+    const params = new URLSearchParams();
+    tags.forEach((tag) => {
+        params.append('tags', tag);
+    });
+    params.append('category', category);
+    const url = `/api/notion/post-list?${params.toString()}`;
+
+    console.log(url);
+    const response = await comFetch(url); // API 엔드포인트 경로
+    return await response.json();
+}
+
+export async function getProperties(): Promise<NotionDatabaseProperty> {
+    const response = await comFetch('/api/notion/property'); // API 엔드포인트 경로
+    return await response.json();
+}
