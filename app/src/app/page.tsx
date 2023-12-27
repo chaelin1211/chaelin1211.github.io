@@ -1,7 +1,7 @@
-import {getProperties} from "@/src/app/notion/notion-service";
+import {getBuildProperties} from "@/src/app/notion/notion-service";
 
 export default async function Home() {
-    const property = await getProperties();
+    const property = await getBuildProperties();
     return (
         <main>
             <h1>Chaelin&apos;s Blog (Temp)</h1>

@@ -1,11 +1,11 @@
 /* app /[category] */
-import {getProperties} from "@/src/app/notion/notion-service";
+import {getBuildProperties, getProperties} from "@/src/app/notion/notion-service";
 import PostList from './post-list';
 
 export const dynamicParams = false; // Dynamic segments not included in generateStaticParams will return a 404.
 
 export async function generateStaticParams() {
-    const props = await getProperties();
+    const props = await getBuildProperties();
 
     // [{category: ""}, {category: ""}]
     return props.category.map((v: { name: string }) => ({category: v.name}))
