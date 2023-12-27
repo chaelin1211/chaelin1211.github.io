@@ -1,6 +1,8 @@
 /* app /[category] */
-import {getBuildProperties, getProperties} from "@/src/app/notion/notion-service";
+import {getBuildProperties} from "@/src/app/notion/notion-service";
 import PostList from './post-list';
+import LoadingPage from "@/src/app/loading";
+import {Suspense} from "react";
 
 export const dynamicParams = false; // Dynamic segments not included in generateStaticParams will return a 404.
 
@@ -16,6 +18,8 @@ export default async function Page(params: { params: { category: string } }) {
     return (
         <div>
             <h1>{category}</h1>
-            <PostList category={category}/>
+            <Suspense fallback={<LoadingPage/>}>
+                <PostList category={category}/>
+            </Suspense>
         </div>);
 }
