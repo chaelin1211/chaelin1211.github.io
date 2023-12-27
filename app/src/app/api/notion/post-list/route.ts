@@ -8,8 +8,6 @@ export async function GET(req: Request) {
     const category = searchParams.get("category") as string | undefined || "";
     const tags: string[] = searchParams.getAll("tags") as string[]|undefined || [];
 
-    console.log(tags);
-
     const notionAddFilter = new NotionPostAndFilter();
     if (category !== "") {
         notionAddFilter.addFilter("category", category)

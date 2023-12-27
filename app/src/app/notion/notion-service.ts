@@ -18,7 +18,6 @@ export async function getPostList(category: string = "", tags: string[] = []): P
     params.append('category', category);
     const url = `/api/notion/post-list?${params.toString()}`;
 
-    console.log(url);
     const response = await comFetch(url); // API 엔드포인트 경로
     return await response.json();
 }

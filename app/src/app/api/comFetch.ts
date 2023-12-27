@@ -8,5 +8,6 @@ export default function comFetch(url: string, options: {} = {}) {
         url = `http://localhost:3000${url}`
     }
 
+    console.log(url);
     return fetch(url, options);
 }
