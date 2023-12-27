@@ -1,24 +1,15 @@
-'use client';
+import {getProperties} from "@/src/app/(notion)/notion-service";
 
-export default function Home() {
+export default async function Home() {
+    const property = await getProperties();
     return (
         <main>
-            <div>
-                <h1>Things to Learn</h1>
-
-                <button
-                    type="button"
-                    onClick={() => {
-                        fetch("http://localhost:8000/post-list")
-                            .then((response) => response.json())
-                            .then((payload) => {
-                                console.log(payload)
-                            });
-                    }}
-                >
-                    Fetch List
-                </button>
-            </div>
+            <h1>Chaelin&apos;s Blog (Temp)</h1>
+            <ul>
+                {property.category.map(v=> (
+                    <li key={v.id}>{v.name}</li>
+                ))}
+            </ul>
         </main>
     )
 }
