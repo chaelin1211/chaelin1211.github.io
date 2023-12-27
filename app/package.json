@@ -4,11 +4,9 @@
   "private": true,
   "homepage": "https://chaelin1211.github.io/app",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "echo > ./out/.nojekyll && gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve@latest out",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
