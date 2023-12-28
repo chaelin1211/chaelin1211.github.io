@@ -8,12 +8,6 @@ import comFetch from "@/src/app/api/comFetch";
 import { NotionClient } from "@/src/app/api/notion/notion";
 
 require("dotenv").config();
-const { Client } = require("@notionhq/client");
-
-// Initializing a client
-const notion = new Client({
-  auth: process.env.NOTION_SECRET,
-});
 
 export async function getPostList(
   category: string = "",
