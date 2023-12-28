@@ -1,25 +1,25 @@
 interface MultiSelectFilter {
-    property: string,
-    "multi_select": {
-        contains: string
-    }
+  property: string;
+  multi_select: {
+    contains: string;
+  };
 }
 
 class NotionPostAndFilter {
-    and: MultiSelectFilter[]
+  and: MultiSelectFilter[];
 
-    constructor() {
-        this.and = [];
-    }
+  constructor() {
+    this.and = [];
+  }
 
-    addFilter(property: string, contains: string) {
-        this.and.push({
-            property: property,
-            "multi_select": {
-                contains: contains
-            }
-        });
-    }
+  addFilter(property: string, contains: string) {
+    this.and.push({
+      property: property,
+      multi_select: {
+        contains: contains,
+      },
+    });
+  }
 }
 
-export {NotionPostAndFilter};
+export { NotionPostAndFilter };

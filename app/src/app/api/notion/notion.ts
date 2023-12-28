@@ -1,6 +1,6 @@
-const {Client} = require("@notionhq/client");
+const { Client } = require("@notionhq/client");
 
 // Initializing a client
 export const NotionClient = new Client({
-    auth: process.env.NOTION_SECRET,
-})
+  auth: process.env.NOTION_SECRET,
+});

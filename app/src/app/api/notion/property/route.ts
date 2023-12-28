@@ -1,11 +1,15 @@
-import {NotionPropertiesResult, notionPropsResultParse} from "@/src/app/notion/notion-result";
+import {
+  NotionPropertiesResult,
+  notionPropsResultParse,
+} from "@/src/app/notion/notion-result";
 
 require("dotenv").config();
-import {NotionClient} from "@/src/app/api/notion/notion";
+import { NotionClient } from "@/src/app/api/notion/notion";
 
 export async function GET() {
-    const originProperties: NotionPropertiesResult = await NotionClient.databases.retrieve({
-        database_id: process.env.NOTION_DATABASE_ID
+  const originProperties: NotionPropertiesResult =
+    await NotionClient.databases.retrieve({
+      database_id: process.env.NOTION_DATABASE_ID,
     });
-    return Response.json(notionPropsResultParse(originProperties))
+  return Response.json(notionPropsResultParse(originProperties));
 }
