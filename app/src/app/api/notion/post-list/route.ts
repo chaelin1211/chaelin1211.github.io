@@ -29,6 +29,6 @@ export async function GET(req: Request) {
   });
 
   return Response.json(
-    getPost.results.map((v) => notionPostResultParse(v.properties, v.url)),
+    getPost.results.map((v) => notionPostResultParse(v.properties, v.id)),
   );
 }

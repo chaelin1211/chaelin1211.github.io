@@ -2,7 +2,7 @@ export interface NotionPostResult {
   results: [
     {
       properties: OriginPropsType;
-      url: string;
+      id: string;
     },
   ];
 }
@@ -36,7 +36,7 @@ export interface PostSimple {
   "sub-title": string;
   category: string;
   title: string;
-  url: string;
+  id: string;
 }
 
 export interface NotionPropertiesResult {
@@ -75,7 +75,7 @@ const getValueByType = (result: any) => {
 
 export const notionPostResultParse = (
   postOrigin: OriginPropsType,
-  url: string,
+  id: string,
 ): PostSimple => {
   return {
     date: getValueByType(postOrigin.date),
@@ -83,7 +83,7 @@ export const notionPostResultParse = (
     category: getValueByType(postOrigin.category),
     "sub-title": getValueByType(postOrigin["sub-title"]),
     title: getValueByType(postOrigin.title),
-    url: url,
+    id: id,
   };
 };
 
