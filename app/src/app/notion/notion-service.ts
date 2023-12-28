@@ -42,3 +42,11 @@ export async function getBuildProperties(): Promise<NotionDatabaseProperty> {
     });
   return notionPropsResultParse(originProperties);
 }
+
+export async function getPage(postId: string): Promise<string> {
+  const params = new URLSearchParams();
+  params.append("postId", postId);
+  const url = `/api/notion/post?${params.toString()}`;
+  const response = await comFetch(url); // API 엔드포인트 경로
+  return await response.json();
+}
