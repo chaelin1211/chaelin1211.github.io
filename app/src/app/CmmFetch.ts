@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-export default function comFetch(url: string, options: {} = {}) {
+export default function CmmFetch(url: string, options: {} = {}) {
   if (
     process.env.NODE_ENV !== "production" ||
     window.location.hostname === "localhost" ||
@@ -10,6 +10,5 @@ export default function comFetch(url: string, options: {} = {}) {
     url = `http://localhost:3000${url}`;
   }
 
-  console.log(url);
   return fetch(url, options);
 }

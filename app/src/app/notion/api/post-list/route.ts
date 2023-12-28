@@ -3,7 +3,7 @@ import {
   notionPostResultParse,
 } from "@/src/app/notion/notion-result";
 import { NotionPostAndFilter } from "@/src/app/notion/notion-filter";
-import { NotionClient } from "@/src/app/api/notion/notion";
+import { NotionClient } from "@/src/app/notion/notion";
 
 require("dotenv").config();
 

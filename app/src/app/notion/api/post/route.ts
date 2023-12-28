@@ -1,4 +1,4 @@
-import { NotionToMd } from "@/src/app/api/notion/notion";
+import { NotionToMd } from "@/src/app/notion/notion";
 
 require("dotenv").config();
 

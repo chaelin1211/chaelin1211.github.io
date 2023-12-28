@@ -4,7 +4,7 @@ import {
 } from "@/src/app/notion/notion-result";
 
 require("dotenv").config();
-import { NotionClient } from "@/src/app/api/notion/notion";
+import { NotionClient } from "@/src/app/notion/notion";
 
 export async function GET() {
   const originProperties: NotionPropertiesResult =
