@@ -5,6 +5,7 @@ import NavBar from "@/src/app/nav-bar";
 import Link from "next/link";
 import React from "react";
 import Footer from "@/src/app/footer";
+import Header from "@/src/app/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <h1>
           <Link href="/">Chaelin&apos;s Blog (Temp)</Link>
         </h1>
+        <Header />
         <NavBar />
 
         {children}
