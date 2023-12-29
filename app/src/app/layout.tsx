@@ -22,10 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <h1>
-          <Link href="/">Chaelin&apos;s Blog (Temp)</Link>
-        </h1>
-        <Header />
         <NavBar />
 
         {children}

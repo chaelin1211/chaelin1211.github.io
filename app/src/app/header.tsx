@@ -2,8 +2,12 @@
 import React, { useState } from "react";
 import { Dialog, Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import { CommonMultiSelect } from "@/src/app/notion/notion-result";
 
-const Header: React.FC = () => {
+const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
+  category: CommonMultiSelect[];
+}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -13,10 +17,10 @@ const Header: React.FC = () => {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img className="h-8 w-auto" alt="" />
-          </a>
+          <Link href="/" className="-m-1.5 p-1.5">
+            <span className="sr-only">Chaelin's Blog</span>
+            <img className="h-8 w-auto" src={"favicon.ico"} alt={"logo"} />
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -29,15 +33,15 @@ const Header: React.FC = () => {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
-          </a>
+          {props.category.map((post) => (
+            <Link
+              key={post.id}
+              href={`/${post.name}`}
+              className="text-sm font-semibold leading-6 text-gray-900"
+            >
+              {post.name}
+            </Link>
+          ))}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
@@ -54,14 +58,10 @@ const Header: React.FC = () => {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </a>
+            <Link href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Chaelin's Blog</span>
+              <img className="h-8 w-auto" src={"favicon.ico"} alt={"logo"} />
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"

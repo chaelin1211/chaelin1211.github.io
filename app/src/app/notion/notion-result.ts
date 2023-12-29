@@ -53,7 +53,7 @@ export interface NotionDatabaseProperty {
   category: CommonMultiSelect[];
 }
 
-interface CommonMultiSelect {
+export interface CommonMultiSelect {
   id: string;
   name: string;
 }
