@@ -44,9 +44,9 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
           ))}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          {/*<a href="#" className="text-sm font-semibold leading-6 text-gray-900">*/}
+          {/*  Log in <span aria-hidden="true">&rarr;</span>*/}
+          {/*</a>*/}
         </div>
       </nav>
       <Dialog
@@ -74,21 +74,24 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Features
-                </a>
+                {props.category.map((post) => (
+                  <Link
+                    key={post.id}
+                    href={`/${post.name}`}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    {post.name}
+                  </Link>
+                ))}
               </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
-              </div>
+              {/*<div className="py-6">*/}
+              {/*  <a*/}
+              {/*    href="#"*/}
+              {/*    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"*/}
+              {/*  >*/}
+              {/*    Log in*/}
+              {/*  </a>*/}
+              {/*</div>*/}
             </div>
           </div>
         </Dialog.Panel>
