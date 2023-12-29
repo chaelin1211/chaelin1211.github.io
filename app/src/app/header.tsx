@@ -5,10 +5,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { CommonMultiSelect } from "@/src/app/notion/notion-result";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
   category: CommonMultiSelect[];
 }) => {
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -18,9 +20,10 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5 flex">
             <span className="sr-only">Chaelin&aposs Blog</span>
             <Image width={40} height={40} src={"/logo.png"} alt={"logo"} />
+            <p className={"text-sm self-center font-semibold"}>Chaelin</p>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -33,14 +36,18 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <div className="bg-bt_light dark:bg-bt_dark inline-flex items-center rounded-full px-2 py-2 text-xs font-md ring-1 ring-inset ring-gray-500/20">
-            {props.category.map((post) => (
-              <Link key={post.id} href={`/${post.name}`} className="px-3">
-                {post.name}
-              </Link>
-            ))}
-          </div>
+        <Popover.Group className="hidden lg:flex">
+          {props.category.map((post) => (
+            <Link
+              key={post.id}
+              href={`/${post.name}`}
+              className={`header ${
+                pathname === "/" + post.name ? "active" : ""
+              } first:rounded-l-full first:pl-6 last:pr-6 px-3 last:rounded-r-full py-2 text-sm`}
+            >
+              {post.name}
+            </Link>
+          ))}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {/*<a href="#" className="text-sm font-semibold leading-6 text-gray-900">*/}
@@ -57,9 +64,10 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-bg_light dark:bg-bg_dark px-4 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5 flex">
               <span className="sr-only">Chaelin&aposs Blog</span>
               <Image width={40} height={40} src={"/logo.png"} alt={"logo"} />
+              <p className={"text-sm self-center font-semibold"}>Chaelin</p>
             </Link>
             <button
               type="button"
