@@ -4,7 +4,7 @@ import { getPostList } from "@/src/app/notion/notion-service";
 import { PostSimple } from "@/src/app/notion/notion-result";
 import Link from "next/link";
 
-const PostList: React.FC<{ category: string }> = async ({ category }) => {
+const PostList: React.FC<{ category: string }> = ({ category }) => {
   const [postList, setPostList] = useState<PostSimple[]>([]);
   useEffect(() => {
     const fetchPostList = async () => {

@@ -4,7 +4,7 @@ import { getPage } from "@/src/app/notion/notion-service";
 import MarkdownComponent from "@/src/app/markdown";
 import { useEffect, useState } from "react";
 
-export default async function Page() {
+export default function Page() {
   const searchParams = useSearchParams();
   const postId = (searchParams.get("postId") as string) || "";
 

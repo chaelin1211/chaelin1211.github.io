@@ -13,14 +13,12 @@ export async function generateStaticParams() {
   return props.category.map((v: { name: string }) => ({ category: v.name }));
 }
 
-export default async function Page(params: { params: { category: string } }) {
+export default function Page(params: { params: { category: string } }) {
   const category = params.params.category;
   return (
     <div>
       <h1>{category}</h1>
-      <Suspense fallback={<LoadingPage />}>
-        <PostList category={category} />
-      </Suspense>
+      <PostList category={category} />
     </div>
   );
 }
