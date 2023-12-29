@@ -4,6 +4,7 @@ import { Dialog, Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { CommonMultiSelect } from "@/src/app/notion/notion-result";
+import Image from "next/image";
 
 const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
   category: CommonMultiSelect[];
@@ -11,21 +12,21 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white">
+    <header>
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Chaelin's Blog</span>
-            <img className="h-8 w-auto" src={"favicon.ico"} alt={"logo"} />
+            <span className="sr-only">Chaelin&aposs Blog</span>
+            <Image width={40} height={40} src={"/logo.png"} alt={"logo"} />
           </Link>
         </div>
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -33,15 +34,13 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          {props.category.map((post) => (
-            <Link
-              key={post.id}
-              href={`/${post.name}`}
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              {post.name}
-            </Link>
-          ))}
+          <div className="bg-bt_light dark:bg-bt_dark inline-flex items-center rounded-full px-2 py-2 text-xs font-md ring-1 ring-inset ring-gray-500/20">
+            {props.category.map((post) => (
+              <Link key={post.id} href={`/${post.name}`} className="px-3">
+                {post.name}
+              </Link>
+            ))}
+          </div>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {/*<a href="#" className="text-sm font-semibold leading-6 text-gray-900">*/}
@@ -56,15 +55,15 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-bg_light dark:bg-bg_dark px-4 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Chaelin's Blog</span>
-              <img className="h-8 w-auto" src={"favicon.ico"} alt={"logo"} />
+              <span className="sr-only">Chaelin&aposs Blog</span>
+              <Image width={40} height={40} src={"/logo.png"} alt={"logo"} />
             </Link>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 "
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -77,8 +76,9 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
                 {props.category.map((post) => (
                   <Link
                     key={post.id}
+                    onClick={() => setMobileMenuOpen(false)}
                     href={`/${post.name}`}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-xs font-md leading-7"
                   >
                     {post.name}
                   </Link>

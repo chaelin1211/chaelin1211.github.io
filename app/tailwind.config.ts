@@ -4,10 +4,11 @@ const config: Config = {
   content: ["./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        bg_dark: "#282828",
+        bg_light: "#e7e7e7",
+        bt_dark: "#111111",
+        bt_light: "#ffffff",
       },
     },
   },
