@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
 import remarkParse from "remark-parse";
-import remarkStringify from "remark-stringify"; // 추가된 부분
+import remarkStringify from "remark-stringify";
 
 interface MarkdownComponentProps {
   markdown: string;

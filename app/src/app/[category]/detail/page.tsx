@@ -10,11 +10,11 @@ export default function Page() {
 
   const [page, setPage] = useState<string>("");
   useEffect(() => {
-    const fetchPostList = async () => {
+    const fetchPost = async () => {
       const page = await getPage(postId);
       setPage(page);
     };
-    fetchPostList();
+    fetchPost();
   }, [postId]);
 
   return <MarkdownComponent markdown={page} />;

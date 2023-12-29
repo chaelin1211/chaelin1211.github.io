@@ -1,8 +1,6 @@
 /* app /[category] */
 import { getBuildProperties } from "@/src/app/notion/notion-service";
 import PostList from "./post-list";
-import LoadingPage from "@/src/app/loading";
-import { Suspense } from "react";
 
 export const dynamicParams = false; // Dynamic segments not included in generateStaticParams will return a 404.
 
