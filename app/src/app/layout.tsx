@@ -24,9 +24,7 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <NavBar />
         <div className="bg-white mx-auto max-w-7xl">
-          <div className="px-6 lg:px-8 mx-auto my-10 py-10 max-w-2xl border-t border-gray-200 pt-10 lg:mx-0 lg:max-w-none">
-            {children}
-          </div>
+          <div className="px-6 py-10">{children}</div>
         </div>
         <Footer />
       </body>
