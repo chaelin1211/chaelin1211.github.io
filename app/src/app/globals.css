@@ -24,10 +24,14 @@ body {
 }
 
 .header {
+    background-color: rgb(var(--background-rgb));
+}
+
+.header-link {
     background-color: rgb(var(--h-button-rgb));
 }
 
-.header.active, .header:hover {
+.header-link.active, .header-link:hover {
     box-shadow: inset 0 0px 20px 0px rgb(0 0 0 / 0.05);
     font-weight: bold;
 }

@@ -41,7 +41,7 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
             <Link
               key={post.id}
               href={`/${post.name}`}
-              className={`header ${
+              className={`header-link ${
                 pathname === "/" + post.name ? "active" : ""
               } first:rounded-l-full first:pl-6 last:pr-6 px-3 last:rounded-r-full py-2 text-sm`}
             >
@@ -62,7 +62,7 @@ const Header: React.FC<{ category: CommonMultiSelect[] }> = (props: {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-bg_light dark:bg-bg_dark px-4 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="header fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-4 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5 flex">
               <span className="sr-only">Chaelin&aposs Blog</span>

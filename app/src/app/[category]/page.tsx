@@ -15,7 +15,6 @@ export default function Page(params: { params: { category: string } }) {
   const category = params.params.category;
   return (
     <div>
-      <h1>{category}</h1>
       <PostList category={category} />
     </div>
   );

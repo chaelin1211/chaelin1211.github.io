@@ -34,7 +34,7 @@ export interface PostSimple {
   date: { start: string; end: string; time_zone: string };
   tags: CommonMultiSelect[];
   "sub-title": string;
-  category: string;
+  category: CommonMultiSelect[];
   title: string;
   id: string;
 }

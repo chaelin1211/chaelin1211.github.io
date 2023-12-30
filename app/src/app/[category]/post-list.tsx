@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { getPostList } from "@/src/app/notion/notion-service";
 import { PostSimple } from "@/src/app/notion/notion-result";
-import Link from "next/link";
+import PostInfo from "@/src/app/[category]/post-info";
 
 const PostList: React.FC<{ category: string }> = ({ category }) => {
   const [postList, setPostList] = useState<PostSimple[]>([]);
@@ -15,20 +15,11 @@ const PostList: React.FC<{ category: string }> = ({ category }) => {
   }, [category]);
 
   return (
-    <ul>
-      {postList.map((item, index) => (
-        <li key={index}>
-          <Link
-            href={{
-              pathname: `/${category}/detail`,
-              query: { postId: item.id },
-            }}
-          >
-            {item.title}
-          </Link>
-        </li>
+    <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
+      {postList.map((item) => (
+        <PostInfo currentPost={item} />
       ))}
-    </ul>
+    </div>
   );
 };
 
