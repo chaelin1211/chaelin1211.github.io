@@ -17,7 +17,7 @@ const PostList: React.FC<{ category: string }> = ({ category }) => {
   return (
     <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
       {postList.map((item) => (
-        <PostInfo currentPost={item} />
+        <PostInfo key={item.id} currentPost={item} />
       ))}
     </div>
   );

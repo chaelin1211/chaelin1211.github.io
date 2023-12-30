@@ -12,12 +12,13 @@ const PostInfo: React.FC<{ currentPost: PostSimple }> = ({ currentPost }) => {
             {currentPost.date.start}
           </time>
           {currentPost.category.map((item) => (
-            <a
+            <Link
+              key={item.id}
               href="#"
               className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="group relative">
@@ -38,12 +39,13 @@ const PostInfo: React.FC<{ currentPost: PostSimple }> = ({ currentPost }) => {
         </div>
         <div className="flex gap-y-1 gap-x-1 flex-wrap mt-4 items-center gap-x-4 text-xs">
           {currentPost.tags.map((item) => (
-            <a
+            <Link
+              key={item.id}
               href="#"
               className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="relative mt-8 flex items-center gap-x-4">
