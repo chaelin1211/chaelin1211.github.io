@@ -15,7 +15,7 @@ export async function GET(req: Request) {
 
   const notionAddFilter = new NotionPostAndFilter();
   if (category !== "") {
-    notionAddFilter.addFilter("category", category);
+    notionAddFilter.addFilter("category", category, "select");
   }
   if (tags.length > 0) {
     tags.map((v: string) => {

@@ -12,13 +12,21 @@ class NotionPostAndFilter {
     this.and = [];
   }
 
-  addFilter(property: string, contains: string) {
-    this.and.push({
+  addFilter(property: string, contain: string, type: string = "multi_select") {
+    let filter: any = {
       property: property,
-      multi_select: {
-        contains: contains,
-      },
-    });
+    };
+    switch (type) {
+      case "muti_select":
+        filter[type] = {
+          contains: contain,
+        };
+      case "select":
+        filter[type] = {
+          equals: contain,
+        };
+    }
+    this.and.push(filter);
   }
 }
 

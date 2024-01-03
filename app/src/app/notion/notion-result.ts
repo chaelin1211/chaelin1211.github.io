@@ -20,7 +20,7 @@ export interface OriginPropsType {
     type: string;
     rich_text: [{ plain_text: string }];
   };
-  category: DefaultMultiSelectInfo;
+  category: CommonMultiSelect[];
   title: { id: string; type: string; title: [{ plain_text: string }] };
 }
 
@@ -34,7 +34,7 @@ export interface PostSimple {
   date: { start: string; end: string; time_zone: string };
   tags: CommonMultiSelect[];
   "sub-title": string;
-  category: CommonMultiSelect[];
+  category: CommonMultiSelect;
   title: string;
   id: string;
 }
@@ -43,7 +43,7 @@ export interface NotionPropertiesResult {
   properties: {
     tags: { multi_select: { options: CommonMultiSelect[] } };
     project: { multi_select: { options: CommonMultiSelect[] } };
-    category: { multi_select: { options: CommonMultiSelect[] } };
+    category: { select: { options: CommonMultiSelect[] } };
   };
 }
 
@@ -70,6 +70,8 @@ const getValueByType = (result: any) => {
       return result.rich_text[0]?.plain_text;
     case "multi_select":
       return result.multi_select;
+    case "select":
+      return result.select;
   }
 };
 
@@ -94,7 +96,7 @@ export const notionPropsResultParse = (
 
   return {
     tags: tags.multi_select.options,
-    category: category.multi_select.options,
+    category: category.select.options,
     project: project.multi_select.options,
   };
 };
