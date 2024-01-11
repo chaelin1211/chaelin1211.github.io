@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <NavBar />
-        <div className="bg-white mx-auto max-w-7xl">
+        <div className="post-main mx-auto max-w-7xl">
           <div className="px-6 py-10">{children}</div>
         </div>
         <Footer />

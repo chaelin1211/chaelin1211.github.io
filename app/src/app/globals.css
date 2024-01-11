@@ -4,17 +4,19 @@
 
 :root {
     --foreground-rgb: 0, 0, 0;
+    --foreground-rgb-d: 0 0 0;
     --background-rgb: 231, 231, 231;
+    --main-background-rgb: 255, 255, 255;
     --h-button-rgb: 255, 255, 255;
-    --h-a-button-rgb: 159, 218, 255;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --foreground-rgb: 255, 255, 255;
+        --foreground-rgb-d: 255 255 255;
         --background-rgb: 40, 40, 40;
+        --main-background-rgb: 17, 17, 17;
         --h-button-rgb: 17, 17, 17;
-        --h-a-button-rgb: 255, 255, 255;
     }
 }
 
@@ -32,6 +34,10 @@ body {
 }
 
 .header-link.active, .header-link:hover {
-    box-shadow: inset 0 0px 20px 0px rgb(0 0 0 / 0.05);
+    box-shadow: inset 0 0 20px 0 rgb(var(--foreground-rgb-d) / 0.10);
     font-weight: bold;
+}
+
+.post-main {
+    background-color: rgb(var(--main-background-rgb));
 }
