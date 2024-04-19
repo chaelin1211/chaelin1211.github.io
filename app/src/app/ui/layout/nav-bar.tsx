@@ -1,6 +1,6 @@
 import { getBuildProperties } from "@/src/app/notion/notion-service";
 import React from "react";
-import Header from "@/src/app/header";
+import Header from "@/src/app/ui/layout/header";
 
 const NavBar: React.FC = async () => {
   const property = await getBuildProperties();

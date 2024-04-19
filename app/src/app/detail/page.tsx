@@ -1,7 +1,7 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import { getPage } from "@/src/app/notion/notion-service";
-import MarkdownComponent from "@/src/app/markdown";
+import MarkdownComponent from "@/src/app/ui/share/markdown";
 import { useEffect, useState } from "react";
 
 export default function Page() {
