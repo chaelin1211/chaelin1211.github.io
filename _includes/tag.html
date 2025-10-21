@@ -8,7 +8,7 @@
 
 {% for tag in tags %}
   {% if site.data.tags contains tag %}
-  <span class="tag" data-tag="{{tag}}">{{ site.data.format[tag] }}</span>
+  <span class="tag" data-tag="{{tag}}">{{ site.data.format[tag] || tag }}</span>
   {% endif %}
 {% endfor %}
 
