@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: "Java 비동기 프로그래밍의 강력한 도구, CompletableFuture 완전 정복"
@@ -281,4 +280,3 @@ public class AllOfAnyOfCompletableFuture {
 `CompletableFuture`는 Java에서 복잡한 비동기 작업을 우아하고 효율적으로 처리할 수 있도록 돕는 강력한 도구입니다. 논블로킹 방식으로 여러 작업을 조합하고, 유연하게 예외를 처리하며, 애플리케이션의 반응성과 처리량을 크게 향상시킬 수 있습니다. 마이크로서비스 아키텍처나 고성능 데이터 처리와 같은 현대적인 애플리케이션 개발에서 `CompletableFuture`는 선택이 아닌 필수적인 요소로 자리매김하고 있습니다. 오늘부터 `CompletableFuture`를 활용하여 더욱 견고하고 반응성 높은 서비스를 구축해 보시기 바랍니다.
 
 <p class = "placeholder">Text by Chaelin & Gemini. Photographs by Chaelin, Unsplash.</p>
-```
