@@ -14,7 +14,7 @@
 
   function filterByTagName(tagName) {
     $('.d-none').removeClass('d-none');
-    if(tagName != ""){
+    if(tagName !== "ALL"){
       $('.post-wrapper').each((index, elem) => {
         if (!elem.hasAttribute('data-'+tagName)) {
           $(elem).addClass('d-none');

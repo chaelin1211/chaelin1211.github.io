@@ -1,16 +1,15 @@
 <span style="font-style: italic;">tags</span>
 
-{% assign tags = page.tags %}
-{% if page.url contains 'posts' %}
- {% assign tags = site.data.tags %}
-{% endif %}
+<!--{% assign tags = page.tags %}-->
+<!--{% if page.url contains 'posts' %}-->
+<!--{% endif %}-->
+{% assign tags = site.data.tags %}
 
 
 {% for tag in tags %}
-  {% if site.data.tags contains tag %}
-  <span class="tag" data-tag="{{tag}}">{{ site.data.format[tag] || tag }}</span>
-  {% endif %}
+{% assign tagName = site.data.format[tag] | default: tag %}
+<span class="tag" data-tag="{{tag}}">{{ tagName }}</span>
 {% endfor %}
 
-<span class="tag selected px-3" data-tag="">ALL</span>
+<span class="tag selected px-3" data-tag="ALL">ALL</span>
 <hr>
