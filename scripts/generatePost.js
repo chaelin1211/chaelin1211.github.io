@@ -156,8 +156,8 @@ tags: [${tags}]
 <p class = "placeholder">Text by Chaelin & Gemini. Photographs by Chaelin, Unsplash.</p>
 를 추가해줘.
 
-대답 없이 블로그 포스트에 넣을 md 파일 내용만 줘.
-코드 블록에 넣지 말고.
+대답 없이 블로그 포스트에 넣을 md 파일 내용만 줘. !코드 블록에 넣지 말고!
+응답 통째로 저장할 수 있게 텍스트로 줘!
 `;
 
     console.log('🧠 Generating post...');
