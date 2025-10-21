@@ -1,0 +1,45 @@
+name: Auto AI Blog Post
+
+on:
+  schedule:
+    - cron: "0 0 */2 * *" # UTC 기준 이틀에 한 번 (한국 시간 09시)
+  workflow_dispatch: # 수동 실행도 가능
+
+permissions:
+  contents: write       # 커밋/푸시만 허용 (필요 최소 권한)
+  id-token: none        # OpenID 권한 불필요 → 차단
+  issues: none
+  pull-requests: none
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+        # npm install보다 빠르고 재현성 높음 (package-lock.json 기반)
+
+      - name: Generate post with Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generatePost.js
+        # 절대 console.log(GEMINI_API_KEY) 금지 ⚠️
+
+      - name: Commit & push new post
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub 자동 토큰
+        run: |
+          git config user.name "chaelin1211"
+          git config user.email "chaelin1211@github.com"
+          git add _posts/*.md topics.json || echo "No new files"
+          git commit -m "🤖 AI auto post $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git push
