@@ -34,7 +34,7 @@ comments: true
               {% for tag in page.tags %}
               {% if site.data.tags contains tag %}
               <a href="/posts/?tag={{ tag }}">
-                {{ site.data.format[tag] }}
+                {{ site.data.format[tag] | default: tag }}
               </a>
               {% endif %}
               {% endfor %}
