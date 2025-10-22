@@ -102,6 +102,7 @@ async function generateTopic() {
             
             * tag는 한국어거나 영어(소문자)
             * 영어로 표현 가능하면 영어로 하고 tag 간 중복 없이 (java면 java, 자바 이렇게 두개가 아니라 java 하나만)
+            * 개발자 레벨은 중급 정도의 주제
         `);
 
         // 결과 텍스트 추출
@@ -125,6 +126,7 @@ async function generatePost(topic, tags) {
     const time = dateString[1];
 
     const prompt = `
+당신은 it 기술 블로거 입니다. 
 오늘 날짜(${date}) 기준으로 ${topic}에 대해 조사하고 블로그용 글을 작성하세요.
 연관 키워드 태그는 [${tags}]
 
@@ -135,7 +137,6 @@ async function generatePost(topic, tags) {
 - 코드 블록 언어 지정
 - 문장 다듬기
 - 반복 표현 최소화
-- 작성자 명은 chaelin1211
 - 기술적 정확도 검증
 - 분량 조회 시간 1분 내외
 - 내용에 날짜 언금은 자제
@@ -154,10 +155,9 @@ tags: [${tags}]
 
 가장 아래에는 
 <p class = "placeholder">Text by Chaelin & Gemini. Photographs by Chaelin, Unsplash.</p>
-를 추가해줘.
+를 추가하세요.
 
-대답 없이 블로그 포스트에 넣을 md 파일 내용만 줘. !코드 블록에 넣지 말고!
-응답 통째로 저장할 수 있게 텍스트로 줘!
+대답 없이 블로그 포스트에 넣을 md 파일 내용만 출력하며 절대 코드 블록에 넣지 말고 응답 통째로 저장할 수 있게 텍스트로 반환하세요.
 `;
 
     console.log('🧠 Generating post...');
