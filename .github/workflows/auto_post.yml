@@ -33,6 +33,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/generatePost.js
         # 절대 console.log(GEMINI_API_KEY) 금지 ⚠️
+      
+      - name: Debug env
+        run: printenv | grep GEMINI
 
       - name: Commit & push new post
         env:
