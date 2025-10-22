@@ -2,5 +2,9 @@
   {
     "date": "2025-10-21",
     "topic": "CompletableFuture"
+  },
+  {
+    "date": "2025-10-22",
+    "topic": "SQL 인덱스 최적화"
   }
 ]
