@@ -42,3 +42,6 @@
 - concurrency
 - async
 - future
+- sql
+- 성능튜닝
+- index
