@@ -50,3 +50,5 @@
 - performance
 - jvm
 - garbage collection
+- redis
+- caching
