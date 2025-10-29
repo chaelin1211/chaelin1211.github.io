@@ -52,3 +52,5 @@
 - garbage collection
 - redis
 - caching
+- transaction
+- isolation
