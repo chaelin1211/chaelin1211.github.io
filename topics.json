@@ -26,5 +26,9 @@
   {
     "date": "2025-10-29",
     "topic": "DB 트랜잭션 격리"
+  },
+  {
+    "date": "2025-10-31",
+    "topic": "Spring Security JWT 구현"
   }
 ]
