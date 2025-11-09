@@ -60,3 +60,5 @@
 - db
 - isolation level
 - sharding
+- cache
+- 성능최적화
