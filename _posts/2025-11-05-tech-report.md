@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: "대규모 데이터베이스의 필살기: DB Sharding 전략 완벽 가이드"
@@ -78,4 +77,3 @@ DB Sharding은 대규모 트래픽과 데이터를 처리해야 하는 현대 �
 성능과 확장성을 동시에 잡는 DB Sharding! 잘 계획된 Sharding 전략은 여러분의 서비스가 한 단계 더 도약할 수 있는 튼튼한 기반을 제공할 것입니다. 다음 포스트에서는 Sharding 구현 시 발생할 수 있는 구체적인 문제점들과 해결 방안에 대해 더 깊이 다뤄보겠습니다.
 
 <p class = "placeholder">Text by Chaelin & Gemini. Photographs by Chaelin, Unsplash.</p>
-```
