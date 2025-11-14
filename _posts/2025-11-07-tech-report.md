@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: "SQL 쿼리 성능 혁신: 인덱스 튜닝 전략 가이드"
@@ -65,4 +64,3 @@ WHERE first_name = 'John';
 SQL 인덱스 튜닝은 데이터베이스 성능 최적화의 핵심입니다. 단순히 인덱스를 많이 생성하는 것이 능사가 아니라, 쿼리의 특징과 데이터 분포를 정확히 이해하고 가장 효율적인 인덱스 전략을 수립하는 것이 중요합니다. 주기적인 모니터링과 분석을 통해 인덱스를 관리하고, 최적의 데이터베이스 성능을 유지하시길 바랍니다.
 
 <p class = "placeholder">Text by Chaelin & Gemini. Photographs by Chaelin, Unsplash.</p>
-```
