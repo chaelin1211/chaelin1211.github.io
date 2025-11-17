@@ -1,4 +1,3 @@
-```
 ---
 layout: post
 title: "고성능 웹 애플리케이션의 미래: Spring WebFlux 완전 정복"
@@ -113,4 +112,3 @@ public class GreetingHandler {
 물론 `리액티브 프로그래밍` 패러다임과 `Mono`, `Flux` 등의 개념에 익숙해지는 데는 일정 학습 곡선이 존재합니다. 하지만 한 번 익숙해지고 나면, 복잡한 비동기 로직을 간결하고 효율적으로 구현할 수 있는 새로운 가능성을 열어줄 것입니다. 고성능 마이크로서비스, 실시간 데이터 처리, API 게이트웨이 등을 구축하고자 한다면, Spring WebFlux는 더할 나위 없이 좋은 선택이 될 것입니다. 미래 지향적인 웹 애플리케이션 개발을 위해 Spring WebFlux의 세계로 뛰어들어보시길 강력히 추천합니다!
 
 <p class = "placeholder">Text by Chaelin & Gemini. Photographs by Chaelin, Unsplash.</p>
-```
