@@ -100,7 +100,7 @@ async function generateTopic() {
             으로 바로 응답 전체를 json으로 파싱 될 수 있게 text 형식으로 반환.
             코드 블록에 넣지 말고!
             
-            * tag는 한국어거나 영어(소문자)
+            * tag는 한국어거나 영어(소문자) snake case로.
             * 영어로 표현 가능하면 영어로 하고 tag 간 중복 없이 (java면 java, 자바 이렇게 두개가 아니라 java 하나만)
             * 개발자 레벨은 중급 정도의 주제
         `);

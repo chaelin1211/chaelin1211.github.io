@@ -5,7 +5,7 @@ subtitle: "[디자인 패턴][행위 패턴] 책임 연쇄"
 date: 2021-04-26 19:47:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 ### 책임 연쇄 - Chain of Resposibility
 클라이언트로부터의 요청을 처리할 수 있는 **처리 객체**를 집합으로 만들어 부여함으로써 결합도를 없애기 위한 패턴

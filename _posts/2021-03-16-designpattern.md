@@ -5,7 +5,7 @@ subtitle: "디자인 패턴 파해치기 Start"
 date: 2021-03-16 19:33:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 
 ### 디자인 패턴이란?

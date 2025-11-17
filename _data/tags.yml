@@ -4,7 +4,7 @@
 - jekyll
 - rest
 - restful
-- miniproject
+- mini_project
 - error
 - todolist
 - spring
@@ -15,7 +15,7 @@
 - reactjs
 - nodejs
 - docker
-- designpattern
+- design_pattern
 - opensource
 - openapi
 - hibernate
@@ -45,27 +45,27 @@
 - sql
 - 성능튜닝
 - index
-- spring boot
-- web development
+- spring_boot
+- web_development
 - performance
 - jvm
-- garbage collection
+- garbage_collection
 - redis
 - caching
 - transaction
 - isolation
-- spring security
+- spring_security
 - jwt
 - security
 - db
-- isolation level
+- isolation_level
 - sharding
 - cache
 - 성능최적화
 - microservices
 - msa
-- distributed transaction
+- distributed_transaction
 - webflux
-- reactive programming
+- reactive_programming
 - actuator
 - monitoring

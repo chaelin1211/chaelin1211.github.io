@@ -5,7 +5,7 @@ subtitle: "[디자인 패턴][구조 패턴] 데커레이터"
 date: 2021-04-20 11:47:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 ### Decorator
 주어진 상황 및 용도에 따라 어떤 객체에 책임을 덧붙이는 패턴

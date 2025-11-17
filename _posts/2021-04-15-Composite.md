@@ -5,7 +5,7 @@ subtitle: "[디자인 패턴][구조 패턴] 컴퍼지트"
 date: 2021-04-15 06:20:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 ### Composite
 객체들의 관계를 **트리 구조**로 구성하여 부분-전체 **계층**을 표현하는 패턴

@@ -5,7 +5,7 @@ subtitle: "[디자인 패턴][생성 패턴] 빌더"
 date: 2021-4-5 00:07:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 ### 빌더
 복합 객체의 **생성 과정**과 **표현 방법**을 분리하여 동일한 생성 절차에서 서로 다른 표현 결과를 만들 수 있게 하는 패턴   

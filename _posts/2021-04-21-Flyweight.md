@@ -5,7 +5,7 @@ subtitle: "[디자인 패턴][구조 패턴] 플라이웨이트"
 date: 2021-04-21 21:43:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 ### Flyweight
 동일하거나 유사한 객체들 사이에 가능한 많은 데이터를 서로 **공유**하여 사용하도록 하여 **메모리 사용량을 최소화** 하는 패턴

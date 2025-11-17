@@ -5,7 +5,7 @@ subtitle: "[디자인 패턴][생성 패턴] 추상 팩토리"
 date: 2021-03-17 21:18:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 ### 추상 팩토리
 구체적인 클래스에 의존하지 않고 **서로 연관되거나 의존적인 객체들의 조합**을 만드는 인터페이스를 제공하는 패턴

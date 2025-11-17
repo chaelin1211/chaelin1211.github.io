@@ -5,7 +5,7 @@ subtitle: "[디자인 패턴][생성 패턴] 프로토타입"
 date: 2021-4-5 23:56:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 ### 프로토타입
 원형이 되는 인스턴스로 새로운 인스턴스를 만드는 방식으로, 객체에 의해 생성될 객체의 타입이 결정되는 생성 디자인 패턴

@@ -5,7 +5,7 @@ subtitle: "[디자인 패턴][행위 패턴] 인터프리터"
 date: 2021-05-03 01:34:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 ### Interpreter
 * 문법 규칙을 클래스화 한 구조로, 일련의 규칙으로 정의된 문법적 언어를 해석하는 패턴

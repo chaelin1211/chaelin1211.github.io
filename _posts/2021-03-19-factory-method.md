@@ -5,7 +5,7 @@ subtitle: "[디자인 패턴][생성 패턴] 팩토리 메소드"
 date: 2021-03-19 02:21:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 ### 팩토리 메소드
 객체 **생성 처리를 서브 클래스로 분리**해서 처리하도록 캡슐화하는 패턴입니다.

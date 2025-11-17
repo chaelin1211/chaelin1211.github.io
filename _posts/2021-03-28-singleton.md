@@ -5,7 +5,7 @@ subtitle: "[디자인 패턴][생성 패턴] 싱글톤 패턴"
 date: 2021-03-28 14:08:00 +0900
 background: '/img/posts/design-pattern.jpg'
 category: Study
-tags: [designpattern]
+tags: [design_pattern]
 ---
 ### 싱글톤
 전역 변수를 사용하지 않고 **객체를 하나만 생성**하도록 하며, 생성된 객체를 어디에서든 참조할 수 있도록 하는 패턴
