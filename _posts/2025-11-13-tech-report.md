@@ -5,7 +5,7 @@ subtitle: "2PC부터 Saga 패턴까지, 마이크로서비스 아키텍처의 �
 date: 2025-11-13 00:54:41.051Z +0900
 background: '/img/posts/pattern01.jpg'
 category: Study
-tags: [microservices,msa,distributed transaction,java]
+tags: [microservices,msa,distributed_transaction,java]
 ---
 
 ## 🚀 마이크로서비스 시대, 트랜잭션의 새로운 도전

@@ -5,7 +5,7 @@ subtitle: "가비지 컬렉션의 기본 이해부터 효율적인 튜닝 기법
 date: 2025-11-11 00:55:01.877Z +0900
 background: '/img/posts/pattern01.jpg'
 category: Study
-tags: [java,jvm,garbage collection,performance]
+tags: [java,jvm,garbage_collection,performance]
 ---
 
 ## 서론: 왜 JVM GC 튜닝이 중요할까요?

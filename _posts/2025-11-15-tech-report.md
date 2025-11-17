@@ -5,7 +5,7 @@ subtitle: "리액티브 프로그래밍으로 서버를 논블로킹 시대에 �
 date: 2025-11-15 00:53:26.341Z +0900
 background: '/img/posts/pattern01.jpg'
 category: Study
-tags: [spring,webflux,reactive programming]
+tags: [spring,webflux,reactive_programming]
 ---
 
 ## 서론: 고성능 웹 서비스의 필수 조건, 논블로킹 아키텍처

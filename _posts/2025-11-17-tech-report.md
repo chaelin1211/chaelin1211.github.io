@@ -5,7 +5,7 @@ subtitle: "운영 환경에서 Spring Boot 애플리케이션 모니터링 및 �
 date: 2025-11-17 00:55:53.719Z +0900
 background: '/img/posts/pattern01.jpg'
 category: Study
-tags: [spring boot,actuator,java,monitoring]
+tags: [spring_boot,actuator,java,monitoring]
 ---
 
 ## 서론: 프로덕션 레디 애플리케이션의 핵심, 모니터링

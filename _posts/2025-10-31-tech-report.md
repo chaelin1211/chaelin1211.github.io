@@ -5,7 +5,7 @@ subtitle: "클라이언트-서버 인증의 핵심, JWT 기반 인증 완벽 가
 date: 2025-10-31 00:53:26.370Z +0900
 background: '/img/posts/pattern01.jpg'
 category: Study
-tags: [spring,spring security,jwt,java,security]
+tags: [spring,spring_security,jwt,java,security]
 ---
 
 현대의 웹 애플리케이션, 특히 RESTful API 기반의 서비스들은 효율적이고 확장 가능한 인증 메커니즘을 필요로 합니다. 전통적인 세션 기반 인증 방식은 분산 시스템이나 모바일/SPA 클라이언트 환경에서 스케일링 및 관리가 복잡할 수 있습니다. 이러한 한계를 극복하기 위해 JSON Web Token(JWT)이 강력한 대안으로 떠오르고 있습니다. JWT는 정보를 안전하게 전송하며, 서버가 클라이언트의 상태를 유지할 필요 없는 **무상태(Stateless)** 인증을 가능하게 합니다.
