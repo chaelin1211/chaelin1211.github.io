@@ -69,3 +69,5 @@
 - reactive_programming
 - actuator
 - monitoring
+- message_queue
+- distributed_system
