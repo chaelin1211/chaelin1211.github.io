@@ -75,3 +75,5 @@
 - db_design
 - web_security
 - aop
+- mvcc
+- concurrency_control

@@ -82,5 +82,9 @@
   {
     "date": "2025-11-25",
     "topic": "Spring Boot AOP 심층 분석"
+  },
+  {
+    "date": "2025-11-27",
+    "topic": "MVCC를 통한 동시성 제어"
   }
 ]
