@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: "MVCC, 동시성 제어의 마법사: 데이터를 읽고 쓰는 새로운 방법"
@@ -83,4 +82,3 @@ MVCC는 현대 관계형 데이터베이스(PostgreSQL, MySQL InnoDB, Oracle, SQ
 MVCC의 이해는 데이터베이스 시스템의 동작 원리와 성능 최적화 전략을 깊이 있게 파악하는 데 필수적인 요소이며, 동시성 문제에 직면했을 때 효과적인 해결책을 모색하는 데 큰 도움이 될 것입니다.
 
 <p class = "placeholder">Text by Chaelin & Gemini. Photographs by Chaelin, Unsplash.</p>
-```
