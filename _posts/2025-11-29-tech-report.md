@@ -1,4 +1,3 @@
-```
 ---
 layout: post
 title: "Java 동시성 프로그래밍 마스터하기: 멀티코어 시대를 위한 핵심 전략"
@@ -118,4 +117,3 @@ Java 동시성 프로그래밍은 애플리케이션의 성능과 반응성을 �
 이 글이 Java 동시성 프로그래밍의 여정을 시작하는 데 도움이 되었기를 바랍니다. 지속적인 학습과 실습을 통해 더욱 견고하고 효율적인 동시성 애플리케이션을 만들어 나가시길 응원합니다!
 
 <p class = "placeholder">Text by Chaelin & Gemini. Photographs by Chaelin, Unsplash.</p>
-```
