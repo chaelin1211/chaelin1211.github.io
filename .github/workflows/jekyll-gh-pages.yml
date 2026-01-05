@@ -37,7 +37,7 @@ jobs:
       - name: Update tags.yml from Study category posts
         run: |
           echo "Extracting tags from Study category posts..."
-          python3 extract_merge_tags.py
+          python3 scripts/extract_merge_tags.py
           echo "Tags updated successfully!"
         continue-on-error: false
       
