@@ -1,8 +1,8 @@
 name: Auto AI Blog Post
 
 on:
-  schedule:
-    - cron: "0 0 */2 * *" # UTC 기준 이틀에 한 번 (한국 시간 09시)
+  #schedule:
+  #  - cron: "0 0 */2 * *" # UTC 기준 이틀에 한 번 (한국 시간 09시)
   workflow_dispatch: # 수동 실행도 가능
 
 permissions:
