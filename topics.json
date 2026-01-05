@@ -162,5 +162,9 @@
   {
     "date": "2026-01-03",
     "topic": "CompletableFuture 비동기"
+  },
+  {
+    "date": "2026-01-05",
+    "topic": "SQL 인덱스 최적화 전략"
   }
 ]
